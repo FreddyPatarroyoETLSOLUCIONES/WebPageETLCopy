@@ -1,0 +1,23 @@
+@if (subDescription && subDescription !== null && subDescription !== undefined) {
+  <img class="image_1" src="assets/images/image2.png" alt="">
+  <img class="image_2" src="assets/images/image2.png" alt="">
+
+  <section class="asesorias-integrales">
+    <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon_1">
+    <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon_2">
+      <div class="title">
+        <h1> {{titleDescription}} </h1>
+        <img src="assets/icons/Line.png" alt="">
+        <p> {{description}} </p>
+      </div>
+      <div class="content">
+        <div class="image-container">
+          <img [src]="image" alt="Asesoría" />
+        </div>
+        <div class="text-container">
+          <h3> {{subTitleDescription}} </h3>
+          <div [innerHTML]="subDescription"></div>
+        </div>
+      </div>
+    </section>
+}

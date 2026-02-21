@@ -1,0 +1,65 @@
+<div class="formContent" id="contact">
+    <div class="title_form">
+        <h5 class="title">¡Pónganse en contacto con nosotros hoy!</h5>
+        <p>Campos obligatorios(*)</p>
+    </div>
+
+    <div class="feedback_message success_message" *ngIf="successMessage">
+        {{ successMessage }}
+    </div>
+
+    <div class="feedback_message error_banner" *ngIf="errorMessage">
+        {{ errorMessage }}
+    </div>
+
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate class="form">
+
+        <div class="form_item">
+            <label for="name">Nombre Completo *:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" #name="ngModel" required
+                autocomplete="off" [disabled]="isLoading" />
+            <div class="error_message" *ngIf="name.invalid && (name.touched || submitted)">
+                El nombre es obligatorio.
+            </div>
+        </div>
+
+        <div class="form_item">
+            <label for="email">Correo Electrónico *:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" #email="ngModel" required
+                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" autocomplete="off" [disabled]="isLoading" />
+
+            <div class="error_message" *ngIf="email.invalid && (email.touched || submitted)">
+                <span *ngIf="email.errors?.['required']">El correo es obligatorio.</span>
+                <span *ngIf="email.errors?.['pattern']">El formato del correo no es válido.</span>
+            </div>
+
+        </div>
+
+        <div class="form_item">
+            <label for="phone">Teléfono *:</label>
+            <input type="text" id="phone" name="phone" [(ngModel)]="formData.phone" #phone="ngModel" required
+                pattern="^[0-9]*$" autocomplete="off" [disabled]="isLoading" />
+            <div class="error_message" *ngIf="phone.invalid && (phone.touched || submitted)">
+                <span *ngIf="phone.errors?.['required']">El teléfono es obligatorio.</span>
+                <span *ngIf="phone.errors?.['pattern']">El teléfono solo debe contener números.</span>
+            </div>
+        </div>
+
+        <div class="form_item">
+            <label for="project">Cuéntanos tu proyecto *:</label>
+            <textarea name="project" id="project" [(ngModel)]="formData.project" #project="ngModel" required rows="5"
+                cols="90" [disabled]="isLoading"></textarea>
+            <div class="error_message" *ngIf="project.invalid && (project.touched || submitted)">
+                Este campo es obligatorio.
+            </div>
+        </div>
+
+        <div class="form_item">
+            <button class="custom_button" type="submit" [disabled]="isLoading">
+                <span class="button_text">{{ isLoading ? 'Enviando...' : 'Enviar' }}</span>
+                <img *ngIf="!isLoading" src="./assets/icons/arrow_icon.png" alt="Arrow Icon" class="button_icon" />
+            </button>
+        </div>
+
+    </form>
+</div>

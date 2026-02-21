@@ -1,0 +1,104 @@
+.contact_information {
+    width: 80%;
+    margin: auto;
+}
+
+.contact_information .text {
+    color: var(--text_color);
+    margin-bottom: 50px;
+}
+
+.contact_information .content_contact {
+    width: 100%;
+}
+
+.contact_information .content_contact .row_info {
+    display: flex;
+    flex-direction: row_info;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.contact_information .content_contact .row_info .content_info {
+    margin: auto;
+    text-align: center;
+}
+
+.contact_information .content_contact .row_info .content_info img {
+    width: 50px;
+    text-align: center;
+}
+
+.contact_information .content_contact .row_info .content_info p {
+    color: var(--text_color);
+    margin-top: 20px;
+}
+
+.contact_information .map {
+    width: 90%;
+    margin: auto;
+    border-radius: 0px 40px 0px 40px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact_information .map iframe {
+    width: 100%;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.background_logo {
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    width: 45%;
+}
+
+@media only screen and (max-width: 1550px) {
+    .background_logo {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .background_logo {
+        position: relative;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact_information .text {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact_information {
+        width: calc(100vw - 100px);
+        margin: 50px auto;
+    }
+
+    .contact_information .content_contact .row_info:last-child {
+        margin-left: 0;
+    }
+
+    .contact_information .content_contact .row_info .content_info {
+        width: 100%;
+    }
+
+    .contact_information .map,
+    .contact_information .map iframe {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .contact_information .content_contact .row_info {
+        flex-direction: column;
+    }
+}

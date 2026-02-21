@@ -1,0 +1,160 @@
+.skills{
+    width: 100%;
+    padding: 5% 8% 4% 4%;
+    background: var(--accent_color);
+    box-shadow: var(--box-shadow_two_sides);
+}
+
+.skills .content_circle{
+    position: absolute;
+    width: 95%;
+    height: auto;
+}
+
+.skills .circle{
+    position: absolute;
+    width: 5%;
+    z-index: 100;
+    box-shadow: var(--box_shadow);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.skills .circle.circle1{
+    top: 0;
+    left: 40px;
+    animation: orbita 6s linear infinite;
+    transform-origin: center;
+}
+
+.skills .circle.circle2{
+    top: 500px;
+    left: 40px;
+    animation: orbita 7s linear infinite reverse;
+    transform-origin: center;
+}
+
+.skills .circle.circle3{
+    top: 300px;
+    right: 40px;
+    animation: orbita 8s linear infinite reverse;
+    transform-origin: center;
+}
+
+.skills .content_skills{
+    position: relative;
+    width: 80%;
+    background: var(--background_skills);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: auto;
+    left: 10%;
+    border-radius: 40px;
+    box-shadow: var(--box_shadow);
+}
+
+.skills .content_skills img{
+    width: 35%;
+    position: relative;
+    z-index: 2;
+    right: 15%;
+    display: inline;
+    object-fit: cover;
+}
+
+.skills .content_skills .info_skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 10%;
+    padding: 5%;
+}
+
+.skills .content_skills .info_skills .title{
+    color: var(--text_color);
+    text-align: left;
+    margin-bottom: 5%;
+    width: 100%;
+}
+.skills .content_skills .info_skills .title h3{
+    font-weight: var(--font_weight_extra_bold);
+    font-size: 2rem;
+}
+
+.skills .content_skills .info_skills .skills_list{
+    color: var(--text_color);
+    position: relative;
+    left: 3%;
+    width: 100%;
+}
+
+.skills .content_skills .info_skills .skills_list ul li{
+    margin-bottom: 2%;
+    list-style-type: circle;
+    font-size: 1.1rem;
+}
+
+.skills .content_skills .info_skills .skills_list ul li::first-line{
+    margin-left: 20px;
+}
+
+.skills .content_skills .info_skills .skills_list ul li::marker{
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--pure_primary_color);
+    font-weight:  var(----font_weight_semi_bold);
+}
+
+@keyframes orbita {
+    0% {
+        transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .skills .content_skills img{
+        display: none;
+    }
+    .skills .content_skills{
+        justify-content: center;
+        left: 0;
+        width: calc(100vw - 100px);
+        align-items: center;
+        padding: 0;
+        border-radius: 20px;
+    }
+    .skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    .skills .content_skills .info_skills{
+        padding: 20px;
+        align-items: center;
+        right: inherit;
+    }
+    .skills .content_skills .info_skills .title{
+
+        text-align: center;
+        width: 90%;
+    }
+    .skills .content_skills .info_skills .title h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .skills .content_skills .info_skills .skills_list{
+        width: 90%;
+        left: 0;
+    }
+    .skills .circle.circle1,
+    .skills .circle.circle2,
+    .skills .circle.circle3{
+       display: none;
+    }
+}

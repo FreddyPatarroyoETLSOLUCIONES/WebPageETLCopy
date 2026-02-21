@@ -1,0 +1,39 @@
+<div class="sub_footer">
+    <div class="content_footer">
+        <div class="content_info">
+            <div class="logo">
+                <img [src]="logo" alt="">
+            </div>
+            
+            <div class="text">
+                <p>{{text1}}</p>
+            </div>
+            
+            <div class="social_networks">
+                <div class="link_social_networks" *ngFor="let socialNetwork of socialNetworks">
+                    <a href={{socialNetwork.Url}}>
+                        <img src={{socialNetwork.img}} alt={{socialNetwork.name}}>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_menu_footer">
+            <h2 class="title_menu"> {{title1}} </h2>
+            <nav>
+                <div class="content-menu">
+                    <ul class="menu-items">
+                        <li class="item" *ngFor="let item of menuFooter">
+                            <a (click)="scrollToSection(item)" routerLinkActive="router-link-active"> {{item}} </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content_image">
+            <img [src]= img alt="">
+        </div>
+    </div>
+    <div class="content_copyright">
+        <p class="copyright" [innerHTML]="text2"></p>
+    </div>
+</div>

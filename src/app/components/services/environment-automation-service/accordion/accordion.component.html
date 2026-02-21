@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="skills-container p-d-flex p-jc-between p-ai-center">
+        <div class="content">
+            <h2 class="title" [innerHTML]="title"></h2>
+            <p class="description">
+                {{ text }}
+            </p>
+            <img class="indicator" src="assets/icons/indicator.png" alt="">
+        </div>
+        <div class="image-container">
+            <img [src]="image" alt="Automatización y capacitación" />
+        </div>
+        <div class="titles-container">
+            <div *ngFor="let tab of tabs" class="tab-title">
+                {{ tab.Text }}
+            </div>
+        </div>
+    </div>
+</div>

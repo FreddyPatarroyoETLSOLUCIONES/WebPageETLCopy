@@ -1,0 +1,126 @@
+.asesorias-integrales {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--background_input);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -40px;
+  z-index: 99999;
+  border-radius: 40px 40px 0 0;
+  box-shadow: var(--box-shadow_two_sides);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  color: var(--primary_color);
+  font-weight: var(--font_weight_extra-bold);
+}
+
+.title p {
+  font-size: 1rem;
+  color: var(--text_color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  min-width: 50%;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.text-container {
+  background-color: var(--box_container);
+  padding: 50px;
+  border-radius: var(--box_border_radius);
+  flex: 2;
+  color: var(--text_color);
+}
+
+.text-container h3 {
+  font-size: 2rem;
+  color: var(--primary_color);
+  margin-bottom: 1rem;
+  font-weight: var(--font_weight_semi_bold);
+}
+
+.text-container p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--text_color);
+}
+
+.text-container div .list{
+  margin-left: 20px;
+}
+
+.dropdown-icon_2{
+  margin-left: 95%;
+}
+.image_1{
+  position: absolute;
+  left: -230px;
+  top: 1000px;
+  max-width: 40%;
+}
+.image_2{
+  position: absolute;    
+  max-width: 40%;
+  right: -200px;
+}
+
+@media only screen and (max-width: 1200px){
+  .content{
+    flex-direction: column;
+    padding: 0;
+  }
+  .image_1, .image_2{
+    display: none;
+  }
+  .text-container{
+    margin-bottom: 40px;
+  }
+  .dropdown-icon_1, .dropdown-icon_2{
+    display: none;
+  }
+  .image-container {
+    min-width: 100%;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .text-container {
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+  }
+  .title h1{
+    margin-top: 40px;
+    font-size: 2rem;
+  }
+  
+  .list li{
+    text-align: left;
+  }
+}

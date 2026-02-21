@@ -1,0 +1,115 @@
+.ability{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 4rem;
+}
+.ability h3{
+    color: var(--text_color);
+    font-weight: 200;
+    font-style: italic;
+}
+.ability h2{
+    color: var(--primary_color);
+    font-size: 2.5rem;
+    font-weight: var(--font_weight_extra-bold);
+}
+.ability .line{
+    margin: 1rem;
+}
+.section_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: calc(100% - 200px);
+    margin-top: 2rem;
+}
+.icon{
+    max-width: 20%;
+    margin-bottom: 1rem;
+}
+.flip_card{
+    width: 40%;
+    height: 55vh;
+    perspective: 1000px;
+}
+.title{
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+}
+.margin{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.flip_card_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s !important;
+    transform-style: preserve-3d;
+}
+.flip_card:hover .flip_card_inner{
+    transform: rotateY(180deg);
+}
+.flip_card_front, .flip_card_back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0 40px 0 40px;
+    padding: 5rem 3rem;
+}
+.flip_card_front{
+    background-color: var(--card_ability_color);
+    color: var(--text_color);
+    box-shadow: var(--box-shadow_two_sides);
+}
+.flip_card_back{
+    background-color: var(--card_ability_color_hover);
+    color: var(--text_color);
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 1200px){
+    .ability{
+        margin: 0 auto;
+        text-align: center;
+        width: calc(100vw - 100px);
+        margin-bottom: 50px;
+    }
+    .section_card{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .flip_card{
+        width: 100%;
+    }
+    .flip_card_back{
+        border-radius: 20px;
+        display: flex;
+        transform: none !important;
+    }
+    .flip_card_front {
+        display: none;
+        transform: none;
+    }
+    .flip_card:hover .flip_card_inner{
+        transform: none;
+    }
+    .ability h2{
+        font-size: 1.8rem;
+    }
+}

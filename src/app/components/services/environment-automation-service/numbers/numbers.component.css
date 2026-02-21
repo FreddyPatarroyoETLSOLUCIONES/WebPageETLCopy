@@ -1,0 +1,101 @@
+.process-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--background_section_numbers);
+    color: var(--text_color);
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.piece {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    transform: rotate(-20deg);
+}
+
+.process-container h2 {
+    font-size: 2rem;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: var(--font_weight_extra-bold);
+    color: var(--pure_white);
+}
+
+.process-container .line {
+    margin: .5rem;
+    filter: invert(1) brightness(2);
+
+}
+
+.process-container .description {
+    font-size: 1rem;
+    color: var(--pure_white);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    width: 60%;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.step-card {
+    background-color: var(--cards_section_numbers);
+    border-radius: 0 50px 0 50px;
+    padding: 1.5rem 3rem;
+    text-align: left;
+    position: relative;
+    margin-top: 1.8rem;
+}
+
+.step-card .step-number {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--background_section_numbers);
+}
+
+.step-card .step-content h3 {
+    font-size: 1.2rem;
+    color: var(--text_color);
+}
+
+.step-card .step-content p {
+    font-size: 0.9rem;
+    color: var(--muted_text_color);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .piece{
+        display: none;
+    }
+    .process-container h2,
+    .process-container .description,
+    .steps-grid {
+        width: calc(100vw - 100px);
+        
+    }
+    .process-container h2{
+        font-size: 1.5rem;
+    }
+    .steps-grid {
+        grid-template-columns: none;
+        flex-direction: column;
+    }
+    .step-card{
+        text-align: center;
+        border-radius: 20px;
+    }
+}

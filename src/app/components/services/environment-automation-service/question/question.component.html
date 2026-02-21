@@ -1,0 +1,21 @@
+<div class="qa-automation-container">
+    <div class="header_container">    
+        <h2 [innerHTML]="title"></h2>
+        
+        <img src="assets/icons/Line.png" alt="line">
+        <p class="description">
+            {{text}}
+        </p>
+    </div>
+    <div class="benefits-grid">
+        <div *ngFor="let benefit of benefits" class="benefit-card">
+            <div class="header_card">
+                <h3>{{ benefit.Title }}</h3>
+                <div class="icon-wrapper">
+                    <img [src]="image" alt="sun_icon">
+                </div>
+            </div>
+            <p>{{ benefit.Text }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+.banner {
+    position: relative;
+    /* background-image: url('/assets/wallpapers/contact_consultoria.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 65vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10vh;
+    box-shadow: var(--box-shadow_two_sides);
+  }
+  
+  .banner-overlay {
+    background: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: var(--shadow_two_sides);
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: var(--font_weight_extra_bold);
+    margin-bottom: 2vh;
+  }
+  
+  .banner-content p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 2vh;
+  }
+  .banner .button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    padding: 12px 150px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--pure_white);
+    font-size: 1rem;
+    font-weight: var(--font_weight_semi_bold);
+    border-radius: var(--box_border_radius_options);
+    cursor: pointer;
+    text-align: center;
+  }
+  .banner .button:hover{
+    background-color: #7a7a7a3d;
+  }
+  @media only screen and (max-width: 1200px){
+    .banner .button{
+      width: 60%;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .banner-content p {
+      font-size: 1rem;
+    }
+
+  }

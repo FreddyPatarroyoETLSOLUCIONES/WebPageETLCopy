@@ -1,0 +1,116 @@
+.formContent {
+    background-color: var(--background_form);
+    width: 80%;
+    border-radius: 0px 40px 0px 40px;
+    padding: 5% 40px;
+    margin: auto;
+    box-shadow: var(--box_shadow);
+}
+
+.formContent .title_form {
+    margin-bottom: 5%;
+}
+
+.formContent .title_form .title {
+    font-weight: var(--font_weight_semi_bold);
+    color: var(--text_color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.formContent .title_form p {
+    color: var(--text_color);
+}
+
+.formContent .title_form p {
+    font-size: 0.8rem;
+}
+
+.formContent .form .form_item {
+    display: block;
+}
+
+.formContent .form .form_item label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text_color);
+}
+
+.formContent .form .form_item textarea {
+    display: block;
+    min-height: 200px;
+    max-height: 200px;
+    resize: none;
+    overflow: auto;
+}
+
+.formContent .form .form_item input,
+.formContent .form .form_item textarea {
+    min-width: 90%;
+    max-width: 90%;
+    border-radius: var(--box_border_radius_options);
+    ;
+    padding: 12px 24px;
+    padding-left: 30px;
+    background: var(--background_input);
+    color: var(--text_color);
+}
+
+.formContent .form .form_item .custom_button {
+    display: block;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.error_message {
+    color: var(--error_message);
+}
+
+.feedback_message {
+    padding: 14px 20px;
+    border-radius: var(--box_border_radius_options);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    font-weight: var(--font_weight_semi_bold);
+}
+
+.success_message {
+    background-color: rgba(0, 177, 237, 0.15);
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+}
+
+.error_banner {
+    background-color: rgba(177, 0, 0, 0.1);
+    color: var(--error_message);
+    border: 1px solid var(--error_message);
+}
+
+.custom_button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .formContent .form .form_item input,
+    .formContent .form .form_item textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .formContent .form .form_item .custom_button {
+        width: 100%;
+    }
+
+    .formContent {
+        margin-bottom: 55px;
+        padding: 15% 30px;
+        width: calc(100vw - 100px);
+        margin: auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+}

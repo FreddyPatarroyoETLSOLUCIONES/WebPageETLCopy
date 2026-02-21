@@ -1,0 +1,34 @@
+<div class="products" id="products">
+    <div class="title">
+        <h2> {{title}} </h2>
+    </div>
+
+    <div class="text">
+        <p> {{text}} </p>
+    </div>
+
+    <div class="components">
+        <div class="product" *ngFor="let product of products; index as i" [attr.id]="'product'+(i+1)" [ngClass]="{'active': (i+1) == 1}">
+            <div class="content_info" (mouseover)="changeHover(i+1)" (mouseleave)="changeHover(0)">
+                <div class="info">
+                    <div class="title_info">
+                        <h3> {{product.title}}</h3>
+                        <div class="icon">
+                            <img src= {{product.icon}} alt="">
+                        </div>
+                    </div>
+                    <div class="body_info"> 
+                        <div class="text_info">
+                            <p> {{product.text}} </p>
+                        </div>
+                        <a class="custom_button" [routerLink]="[product.url]" routerLinkActive="router-link-active">
+                            <span class="button_text">Ver más</span>
+                            <img class="button_icon" src="./assets/icons/cursor.png" alt=""> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

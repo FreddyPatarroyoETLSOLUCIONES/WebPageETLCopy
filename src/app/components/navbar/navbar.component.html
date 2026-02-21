@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg" [ngClass]="{'dark-mode': isDarkMode}">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" [routerLink]="['/principal']" routerLinkActive="router-link-active">
+      <img src="./assets/logo/logo_1.png" alt="Logo" class="logo-img">
+      <span>Soluciones</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngClass]="{'show': menuOpen}" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <ng-container *ngFor="let menuItem of menuItems; let i = index">
+          <li class="nav-item" *ngIf="menuItem.subMenu.length === 0">
+            <a class="nav-link" [routerLink]="[menuItem.link]" routerLinkActive="router-link-active" (click)="closeMenu()">
+              {{ menuItem.title }}
+            </a>
+          </li>
+          <li class="nav-item dropdown" *ngIf="menuItem.subMenu.length > 0" (mouseenter)="toggleSubMenu($event, i, true)" (mouseleave)="toggleSubMenu($event, i, false)">
+            <a class="nav-link dropdown-toggle" [ngClass]="{'rotated': subMenus[i]}">
+              {{ menuItem.title }}
+            </a>
+            <div style="padding-bottom: 3px;"></div>
+            <ul class="dropdown-menu" [ngClass]="{'show': subMenus[i]}">
+              <li *ngFor="let subMenuItem of menuItem.subMenu">
+                <a class="dropdown-item" [ngClass]="{'selected': subMenus[i]}" [routerLink]="[subMenuItem.link]" routerLinkActive="router-link-active" (click)="closeMenu()">
+                  {{ subMenuItem.subTitle }}
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ng-container>
+      </ul>
+      <a class="custom_button ms-3" (click)="scrollToContact()">Contacto</a>
+    </div>
+  </div>
+</nav>

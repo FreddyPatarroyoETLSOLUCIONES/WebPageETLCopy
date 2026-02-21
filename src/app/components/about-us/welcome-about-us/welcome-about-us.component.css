@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+    /* background-image: url('/assets/wallpapers/wallp_consultoria.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 65vh;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 30px 30px 0 0;
+    box-shadow: var(--box-shadow_two_sides);
+  }
+  .banner-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 75px; 
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: var(--font_weight_extra_bold);
+  }
+  
+  .banner-content p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    font-style: italic;
+  }
+  @media only screen and (max-width: 1200px){
+    .banner-overlay{
+      justify-content: center;
+    }
+    .banner-content p{
+      text-align: center;
+    }
+    .banner-content h1 {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .banner {
+      background-position: 70% center;
+    }
+  }
+  

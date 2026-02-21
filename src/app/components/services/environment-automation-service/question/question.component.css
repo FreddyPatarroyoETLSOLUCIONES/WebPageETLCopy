@@ -1,0 +1,126 @@
+.qa-automation-container {
+    margin: 0 auto;
+    width: calc(100% - 200px);
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.header_container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding: 50px;
+}
+
+.qa-automation-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text_color);
+    font-weight: var(--font_weight_extra-bold);
+    max-width: 80%;
+}
+
+.qa-automation-container h2 .highlight {
+    color: var(--primary_color);
+    font-weight: bold;
+    font-weight: var(--font_weight_extra-bold);
+}
+
+.qa-automation-container img {
+    width: 30%;
+    margin-bottom: 1.2rem;
+}
+
+.qa-automation-container .description {
+    font-size: 1rem;
+    color: var(--muted_text_color);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.benefit-card {
+    background-color: var(--background_form);
+    border-radius: 8px;
+    padding: 1.3rem;
+    text-align: left;
+}
+
+.benefits-grid .header_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.benefit-card .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary_color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-card .icon-wrapper img {
+    margin: 0 auto;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    color: var(--text_color);
+    max-width: 80%;
+}
+
+.benefit-card p {
+    font-size: 0.9rem;
+    color: var(--muted_text_color);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .header_container{
+        max-width: calc(100vw - 100px);
+        padding: 0;
+        align-items: center;
+    }
+    .qa-automation-container {
+        flex-direction: column;
+        align-items: center;
+        width: calc(100vw - 100px);
+
+    }
+    .benefits-grid{
+        grid-template-columns: none;
+        flex-direction: column;
+        width: calc(100vw - 100px);
+    }
+    .qa-automation-container h2 {
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .qa-automation-container .description {
+        text-align: center;
+    }
+    .header_card{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header_card h3{
+        margin-top: 20px;
+    }
+    .benefit-card{
+        align-items: center;
+        text-align: center;
+    }
+}

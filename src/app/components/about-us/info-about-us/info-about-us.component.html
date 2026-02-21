@@ -1,0 +1,21 @@
+<section class="asesorias-integrales">
+    <img class="image_1" src="assets/images/image2.png" alt="">
+    <img class="image_2" src="assets/images/image2.png" alt="">
+    <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon_1">
+    <img src="./assets/icons/add-icon.png" alt="Icono" class="dropdown-icon_2">
+    <div class="title">
+        <h1>{{ title }}</h1>
+        <img src="assets/icons/Line.png" alt="">
+        <p>{{ text }}</p>
+    </div>
+    <div class="cards">
+        <div class="card" *ngFor="let cardData of cardsData">
+            <div class="card_content" *ngFor="let card of cardsData1">
+                <img src="assets/icons/Code_perspective_matte.png" alt="">
+                <h2>{{cardData.titleCard}}</h2>
+                <p>{{cardData.descriptionCard}}</p>
+            </div>
+        </div>
+    </div>
+    <img src="assets/images/rectangle_19.png" alt="" class="rectangle">
+</section>

@@ -1,0 +1,23 @@
+<div class="skills">
+    <div class="content_circle">
+        <img src="assets\images\image5.png" alt="" class="circle circle1">
+        <img src="assets\images\image5.png" alt="" class="circle circle2">
+        <img src="assets\images\image5.png" alt="" class="circle circle3">
+    </div>
+    <div class="content_skills">
+        <div></div>
+        <img src="./assets/images/image4.png" alt="">
+        <div class="info_skills">
+            <div class="title">
+                <h3>
+                    {{title}}
+                </h3>
+            </div>
+            <div class="skills_list">
+                <ul>
+                    <li *ngFor="let skill of skills"> {{skill}} </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

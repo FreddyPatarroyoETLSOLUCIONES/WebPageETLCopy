@@ -1,0 +1,13 @@
+<div class="logos light_theme" [style.display]="isDarkTheme ? 'none' : 'flex'">
+    <div class="logos_slide" #lightSlide>
+      <img *ngFor="let client of clients" class="filter" [src]="'./assets/clients/' + client" />
+      <img *ngFor="let client of clients" class="filter" [src]="'./assets/clients/' + client" />
+    </div>
+  </div>
+
+  <div class="logos dark_theme" [style.display]="isDarkTheme ? 'flex' : 'none'">
+    <div class="logos_slide" #darkSlide>
+      <img *ngFor="let client of darkClients" class="filter" [src]="'./assets/clients/' + client" />
+      <img *ngFor="let client of darkClients" class="filter" [src]="'./assets/clients/' + client" />
+    </div>
+  </div>
