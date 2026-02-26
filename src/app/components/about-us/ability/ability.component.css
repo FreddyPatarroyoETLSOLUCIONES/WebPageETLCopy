@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 4rem;
 }
 .ability h3{
@@ -21,93 +22,109 @@
 }
 .section_card{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 2rem;
-    width: calc(100% - 200px);
+    width: 100%;
     margin-top: 2rem;
 }
-.icon{
-    max-width: 20%;
-    margin-bottom: 1rem;
-}
-.flip_card{
-    width: 40%;
-    height: 55vh;
-    perspective: 1000px;
-}
-.title{
-    font-size: 1.2rem;
-    width: 70%;
-    margin: 0 auto;
-    font-weight: 600;
-    text-align: center;
-}
-.margin{
-    margin-bottom: 1rem;
-    width: 100%;
-}
-.flip_card_inner{
+
+.skill_card{
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.5s !important;
-    transform-style: preserve-3d;
+    width: 40%;
+    min-height: 38vh;
+    border-radius: 0 40px 0 40px;
+    overflow: hidden;
+    cursor: default;
+    box-shadow: var(--box-shadow_two_sides);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.flip_card:hover .flip_card_inner{
-    transform: rotateY(180deg);
+.skill_card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 0 1px var(--primary_color), 0 8px 32px color-mix(in srgb, var(--primary_color) 20%, transparent);
 }
-.flip_card_front, .flip_card_back{
+
+.card_front,
+.card_back{
     position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 0 40px 0 40px;
-    padding: 5rem 3rem;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: opacity 0.35s ease, transform 0.35s ease;
 }
-.flip_card_front{
+
+.card_front{
     background-color: var(--card_ability_color);
-    color: var(--text_color);
-    box-shadow: var(--box-shadow_two_sides);
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
 }
-.flip_card_back{
+.skill_card:hover .card_front{
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
+}
+
+.card_back{
     background-color: var(--card_ability_color_hover);
+    opacity: 0;
+    transform: translateY(12px);
+    z-index: 1;
+}
+.skill_card:hover .card_back{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icon{
+    max-width: 25%;
+    max-height: 80px;
+    object-fit: contain;
+}
+.card_title{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary_color);
+    margin: 0;
+}
+.card_desc{
+    font-size: 0.85rem;
     color: var(--text_color);
-    transform: rotateY(180deg);
+    line-height: 1.6;
+    margin: 0;
 }
 
 @media only screen and (max-width: 1200px){
     .ability{
-        margin: 0 auto;
-        text-align: center;
         width: calc(100vw - 100px);
+        margin: 0 auto;
         margin-bottom: 50px;
+        text-align: center;
     }
     .section_card{
         flex-direction: column;
         width: 100%;
-
     }
-    .flip_card{
+    .skill_card{
         width: 100%;
-    }
-    .flip_card_back{
+        min-height: 180px;
         border-radius: 20px;
-        display: flex;
-        transform: none !important;
     }
-    .flip_card_front {
+    .card_front{
         display: none;
-        transform: none;
     }
-    .flip_card:hover .flip_card_inner{
+    .card_back{
+        position: relative;
+        inset: unset;
+        opacity: 1;
         transform: none;
+        border-radius: 20px;
+        padding: 2rem;
     }
     .ability h2{
         font-size: 1.8rem;

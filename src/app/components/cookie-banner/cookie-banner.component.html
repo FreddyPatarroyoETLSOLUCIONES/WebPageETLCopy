@@ -1,0 +1,128 @@
+@if (cookieService.showBanner() && !cookieService.showModal()) {
+  <div class="cookie-banner" role="dialog" aria-label="Aviso de cookies" aria-live="polite">
+    <div class="banner-content">
+      <div class="banner-text">
+        <p class="banner-title">
+          <svg class="cookie-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-5a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm4-4a1 1 0 1 1-1-1 1 1 0 0 1 1 1zm-7 1a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"/>
+          </svg>
+          Usamos cookies
+        </p>
+        <p class="banner-description">
+          Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Puedes gestionar tus preferencias en cualquier momento.
+        </p>
+      </div>
+      <div class="banner-actions">
+        <button class="btn-secondary" (click)="rejectAll()">Rechazar todo</button>
+        <!-- <button class="btn-outline" (click)="openModal()">Personalizar</button> -->
+        <button class="btn-primary" (click)="acceptAll()">Aceptar todo</button>
+      </div>
+    </div>
+  </div>
+}
+
+@if (cookieService.showModal()) {
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Preferencias de cookies" (click)="cookieService.closeModal()">
+    <div class="modal-container" (click)="$event.stopPropagation()">
+
+      <div class="modal-header">
+        <h2 class="modal-title">Preferencias de privacidad</h2>
+        <button class="btn-close" (click)="cookieService.closeModal()" aria-label="Cerrar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="modal-intro">
+        Cuando visitas este sitio web, podemos almacenar o recuperar información en tu navegador, principalmente en forma de cookies. Esta información puede ser sobre ti, tus preferencias o tu dispositivo y se usa principalmente para que el sitio funcione como esperas.
+      </p>
+
+      <div class="categories">
+
+        <div class="category-item">
+          <div class="category-header">
+            <div class="category-info">
+              <span class="category-name">Cookies esenciales</span>
+              <span class="badge always-on">Siempre activas</span>
+            </div>
+            <div class="toggle disabled" aria-label="Siempre activas" title="No se pueden desactivar">
+              <div class="toggle-knob"></div>
+            </div>
+          </div>
+          <p class="category-desc">
+            Estas cookies son necesarias para que el sitio web funcione y no se pueden desactivar. Generalmente solo se establecen en respuesta a acciones realizadas por ti, como configurar tus preferencias de privacidad, iniciar sesión o rellenar formularios.
+          </p>
+        </div>
+
+        <div class="category-item">
+          <div class="category-header">
+            <div class="category-info">
+              <span class="category-name">Cookies de preferencias</span>
+            </div>
+            <button
+              class="toggle"
+              [class.active]="tempPrefs().preferences"
+              (click)="toggle('preferences')"
+              [attr.aria-checked]="tempPrefs().preferences"
+              role="switch"
+              aria-label="Cookies de preferencias">
+              <div class="toggle-knob"></div>
+            </button>
+          </div>
+          <p class="category-desc">
+            Permiten que el sitio web recuerde información que cambia el comportamiento o el aspecto de este, como tu idioma preferido o la región en la que te encuentras.
+          </p>
+        </div>
+
+        <div class="category-item">
+          <div class="category-header">
+            <div class="category-info">
+              <span class="category-name">Cookies analíticas</span>
+            </div>
+            <button
+              class="toggle"
+              [class.active]="tempPrefs().analytics"
+              (click)="toggle('analytics')"
+              [attr.aria-checked]="tempPrefs().analytics"
+              role="switch"
+              aria-label="Cookies analíticas">
+              <div class="toggle-knob"></div>
+            </button>
+          </div>
+          <p class="category-desc">
+            Nos permiten contar las visitas y fuentes de tráfico para medir y mejorar el rendimiento del sitio. Nos ayudan a saber qué páginas son las más y menos populares, y cómo se mueven los visitantes por el sitio.
+          </p>
+        </div>
+
+        <div class="category-item">
+          <div class="category-header">
+            <div class="category-info">
+              <span class="category-name">Cookies de marketing</span>
+            </div>
+            <button
+              class="toggle"
+              [class.active]="tempPrefs().marketing"
+              (click)="toggle('marketing')"
+              [attr.aria-checked]="tempPrefs().marketing"
+              role="switch"
+              aria-label="Cookies de marketing">
+              <div class="toggle-knob"></div>
+            </button>
+          </div>
+          <p class="category-desc">
+            Estas cookies pueden ser establecidas por nuestros socios publicitarios. Pueden ser utilizadas por esas empresas para construir un perfil de tus intereses y mostrarte anuncios relevantes en otros sitios.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" (click)="rejectAll()">Rechazar todo</button>
+        <button class="btn-primary" (click)="saveCustom()">Guardar preferencias</button>
+        <button class="btn-primary" (click)="acceptAll()">Aceptar todo</button>
+      </div>
+
+    </div>
+  </div>
+}

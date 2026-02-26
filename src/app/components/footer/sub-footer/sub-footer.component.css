@@ -99,6 +99,24 @@
     margin-top: 20px;
 }
 
+.cookie-settings-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-top: 8px;
+  transition: color 0.2s ease;
+}
+
+.cookie-settings-btn:hover {
+  color: var(--pure_white);
+}
+
 @media only screen and (max-width: 1200px) {
     .sub_footer{
         margin: auto 50px;

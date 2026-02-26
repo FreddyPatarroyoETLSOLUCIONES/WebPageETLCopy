@@ -441,6 +441,17 @@ export const Text: any = {
             Text: 'Nuestra Empresa',
             Img: './assets/wallpapers/image_aboutUs.png'
         },
+        MisionVision: {
+            VideoUrl: 'https://www.youtube.com/embed/rHWsKnwpmec',
+            Mision: {
+                Title: 'Nuestra Misión',
+                Text: 'Impulsar la transformación de las empresas mediante soluciones tecnológicas innovadoras que optimicen procesos y mejoren la calidad de vida. Fomentamos una cultura colaborativa, sostenible y orientada a la excelencia, adaptándonos de forma ágil a las necesidades del mercado y garantizando la satisfacción de nuestros clientes a través de un servicio personalizado y de alto valor.'
+            },
+            Vision: {
+                Title: 'Nuestra Visión',
+                Text: 'Para el 2030, ser una empresa referente en soluciones tecnológicas innovadoras, liderando la transformación digital de las industrias y promoviendo un futuro más sostenible, conectado y centrado en la experiencia del cliente, el talento y la responsabilidad social.'
+            }
+        },
         Info: {
             Title: 'Expertos en soluciones de Alto Impacto',
             Text: 'Somos una empresa joven, con ganas y experiencia de profesionales con más de 10 años en el mercado de servicios de tecnología y Sistemas de información, contamos con la participación en proyectos de alto impacto, desarrollamos soluciones de TI aplicadas en sectores como comunicaciones, transporte, comercio, logística, solidario, salud, legal y servicios.',
@@ -568,9 +579,9 @@ export const Text: any = {
             Logo: "./assets/logo/logo_white.png",
             Text1: 'ETL Soluciones presenta permanentemente nuevas oportunidades para profesionales interesados en un lugar de trabajo creciente, apasionado y orientado al equipo.',
             socialNetworks: [
-                {name: 'Facebook', Url: 'https://www.facebook.com/', img: './assets/socialNetworks/facebook.png'},
-                {name: 'Instagram', Url: 'https://www.instagram.com/', img: './assets/socialNetworks/instagram.png'},
-                {name: 'Linkedin', Url: 'https://co.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F', img: './assets/socialNetworks/linkedin.png'}
+                {name: 'Facebook', Url: 'https://www.facebook.com/share/1G1eRTfbXr/', img: './assets/socialNetworks/facebook.png'},
+                {name: 'Instagram', Url: 'https://www.instagram.com/etlsoluciones/', img: './assets/socialNetworks/instagram.png'},
+                {name: 'Linkedin', Url: 'https://co.linkedin.com/company/etl-solucionescol', img: './assets/socialNetworks/linkedin.png'}
             ],
             
             Title1: "Menu",

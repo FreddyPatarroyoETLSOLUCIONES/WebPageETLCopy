@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Text } from '../../../helpers/texts';
+import { CookieConsentService } from '../../../services/cookie-consent.service';
 
 @Component({
   selector: 'app-sub-footer',
@@ -19,7 +20,7 @@ export class SubFooterComponent implements OnInit{
   img!: string[];
   text2!: string;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private cookieService: CookieConsentService) {}
 
   ngOnInit(): void {
     this.logo = Text.Footer.SubFooter.Logo;
@@ -31,6 +32,10 @@ export class SubFooterComponent implements OnInit{
     this.text2 = Text.Footer.SubFooter.Text2;
   }
   
+  openCookieSettings(): void {
+    this.cookieService.revokeConsent();
+  }
+
   scrollToSection(section: string): void {
     const sectionMap: { [key: string]: string } = {
       'Inicio': 'navbar',

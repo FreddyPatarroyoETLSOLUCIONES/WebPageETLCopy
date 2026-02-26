@@ -47,20 +47,24 @@
     background: var(--background_skills);
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
+    align-items: center;
     margin: auto;
-    left: 10%;
+    left: 5%;
     border-radius: 40px;
     box-shadow: var(--box_shadow);
+    overflow: visible;
+    min-height: 300px;
 }
 
 .skills .content_skills img{
-    width: 35%;
-    position: relative;
+    width: 55%;
+    flex-shrink: 0;
+    position: absolute;
+    left: -18%;
+    bottom: 0;
     z-index: 2;
-    right: 15%;
-    display: inline;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .skills .content_skills .info_skills{
@@ -68,8 +72,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    right: 10%;
-    padding: 5%;
+    padding: 4% 5% 4% 34%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skills .content_skills .info_skills .title{
