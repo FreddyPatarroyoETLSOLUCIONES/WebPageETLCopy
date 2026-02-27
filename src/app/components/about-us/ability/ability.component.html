@@ -4,13 +4,15 @@
     <img class="line" src="assets/icons/Line.png" alt="line">
     <div *ngFor="let group of groupedAbilities" class="section_card">
       <div *ngFor="let ability of group" class="skill_card">
-        <div class="card_front">
-          <img class="icon" [src]="ability.frontImage" alt="{{ ability.title }}">
-          <p class="card_title">{{ ability.title }}</p>
-        </div>
-        <div class="card_back">
-          <p class="card_title">{{ ability.title }}</p>
-          <p class="card_desc">{{ ability.description.join(', ') }}</p>
+        <div class="flip_card_inner">
+          <div class="card_front">
+            <img class="icon" [src]="ability.frontImage" alt="{{ ability.title }}">
+            <p class="card_title">{{ ability.title }}</p>
+          </div>
+          <div class="card_back">
+            <p class="card_title">{{ ability.title }}</p>
+            <p class="card_desc">{{ ability.description.join(', ') }}</p>
+          </div>
         </div>
       </div>
     </div>

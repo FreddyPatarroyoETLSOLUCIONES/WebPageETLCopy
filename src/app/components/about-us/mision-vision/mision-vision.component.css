@@ -37,8 +37,15 @@
     gap: 1rem;
     padding: 2rem;
     border-radius: var(--box_border_radius_options);
-    background-color: var(--card_container_color);
+    background-color: var(--card_ability_color);
     box-shadow: var(--box-shadow_two_sides);
+}
+
+.mv-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mv-icon {
@@ -59,7 +66,7 @@
 }
 
 .mv-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: var(--font_weight_semi_bold);
     color: var(--primary_color);
     margin: 0;
@@ -85,5 +92,19 @@
 
     .mv-card {
         padding: 1.5rem;
+    }
+
+    .mv-title {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .mv-card h3 {
+        text-align: center;
+    }
+
+    .mv-card p {
+        text-align: center;
     }
 }
