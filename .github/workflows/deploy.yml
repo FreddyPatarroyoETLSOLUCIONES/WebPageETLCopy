@@ -1,0 +1,56 @@
+name: 🚀 Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # o 'master', según tu rama principal
+  workflow_dispatch:  # Permite lanzar el despliegue manualmente
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🛠️ Build Angular App
+        # Importante: Ajusta la ruta de salida si es diferente en tu angular.json
+        run: npx ng build --configuration production --base-href "/WebPageETLCopy/"
+
+      - name: 🧩 Add .nojekyll file
+        # Esto evita que GitHub Pages intente procesar la página con Jekyll
+        run: echo "" > dist/etl-web-site/browser/.nojekyll
+
+      - name: 📤 Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Importante: A partir de Angular 17, la carpeta a desplegar es 'browser'
+          path: dist/etl-web-site/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⚙️ Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
