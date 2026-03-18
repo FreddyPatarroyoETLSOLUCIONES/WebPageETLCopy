@@ -58,10 +58,11 @@
 }
 
 .skills .content_skills img{
-    width: 55%;
+    max-height: 750px;
+    width: 50%;
     flex-shrink: 0;
     position: absolute;
-    left: -18%;
+    left: -20%;
     bottom: 0;
     z-index: 2;
     object-fit: contain;

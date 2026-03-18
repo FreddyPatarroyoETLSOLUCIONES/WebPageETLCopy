@@ -15,7 +15,7 @@ export class AutoScrollComponent implements OnInit, AfterViewInit, OnDestroy {
     'client_5.png', 'client_6.png', 'client_7.png', 'client_8.png',
     'client_9.png', 'client_10.png', 'client_11.png', 'client_12.png',
     'client_13.png', 'client_14.png', 'client_15.png', 'client_16.png',
-    'client_17.png', 'client_18.png', 'client_19.png'
+    'client_17.png', 'client_18.png', 'client_19.png', 'client_20.png'
   ];
 
   darkClients: string[] = this.clients.map(client => client.replace('.png', '_dark.png'));
