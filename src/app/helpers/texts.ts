@@ -21,7 +21,7 @@ export const Text: any = {
         Welcome: {
             Title1: 'El camino de la Evolución Digital',
             Subtitle1: 'Soluciones Tecnológicas de Alto Impacto',
-            Text1: 'Más de 10 años de experiencia, desarrollando soluciones tecnológicas innovadoras para sectores clave. Transformamos industrias con proyectos de alto impacto'
+            Text1: 'Integramos tecnología, datos y automatización para fortalecer la operación de organizaciones de diferentes industrias y sectores. Contamos con más de 12 años de experiencia desarrollando soluciones eficientes, escalables y orientadas a resultados.'
         },
         Services: {
             Title: 'SERVICIOS TI',
@@ -194,23 +194,27 @@ export const Text: any = {
                 Img: './assets/wallpapers/data_wallpaper.png'
             },
             Description: {
-                Title: 'Calidad, Gobernanza y Analítica Avanzada',
-                Text1: 'Servicio enfocado en administrar la información de forma segura, confiable y alineada con los objetivos estratégicos del negocio.',
+                Title: 'Gestión de Datos, BI y Analítica Avanzada',
+                Text1: 'Ofrecemos un servicio integral para administrar y potenciar la información, asegurando que los datos sean seguros, confiables y alineados con los objetivos estratégicos del negocio.',
                 Img: './assets/images/data_service.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: `<p>La gestión de datos organiza, protege y asegura la disponibilidad de la información, supervisando su recolección, almacenamiento, integración y gobierno en entornos locales y en la nube.</p>
-                        </br> 
-                        <p>Nuestro modelo, probado en múltiples industrias, permite maximizar el valor de los datos mediante Inteligencia Artificial aplicada a:</p> 
-                        </br> 
+                Text2: `<p>Nuestra gestión de datos organiza, protege y asegura la disponibilidad de la información, supervisando su recolección, almacenamiento, integración y gobernanza, tanto en entornos locales como en la nube. Al mismo tiempo, nuestras soluciones de Inteligencia de Negocios (BI) transforman los datos en información accionable, facilitando la toma de decisiones estratégicas.</p>
+                        </br>
+                        <p><strong>Tecnologías clave:</strong></p>
+                        </br>
+                        <p>Utilizamos una combinación de bases de datos modernas, plataformas de almacenamiento y procesamiento de datos, herramientas de visualización y dashboards interactivos, así como soluciones de catalogación, integración y gobernanza que garantizan control, seguridad y trazabilidad de la información.</p>
+                        </br>
+                        <p><strong>Valor agregado mediante Inteligencia Artificial y BI:</strong></p>
                         <ul class="list" >
-                            <li><strong>Análisis predictivo:</strong> descubrimiento de tendencias y patrones en grandes volúmenes de información.</li>
+                            <li><strong>Análisis predictivo:</strong> identificación de tendencias y patrones en grandes volúmenes de datos.</li>
                             <li><strong>Calidad de datos:</strong> detección automática de inconsistencias, duplicados y errores.</li>
-                            <li><strong>Clasificación inteligente:</strong> catalogación y etiquetado para una gobernanza eficiente.</li>
-                        </ul> 
-                        </br> 
-                        <p>Integramos estas capacidades con monitoreo continuo y cumplimiento normativo, asegurando confiabilidad y aprovechamiento estratégico de la información.</p>
-                        </br> 
-                        <p>La adopción de IA en la gestión de datos impulsa decisiones oportunas, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`
+                            <li><strong>Clasificación inteligente:</strong> catalogación y etiquetado que optimiza la gobernanza.</li>
+                            <li><strong>Visualización y BI:</strong> dashboards y reportes interactivos que convierten datos en insights claros y oportunos.</li>
+                        </ul>
+                        </br>
+                        <p>Estas capacidades se complementan con monitoreo continuo y cumplimiento normativo, asegurando confiabilidad y máximo aprovechamiento estratégico de la información.</p>
+                        </br>
+                        <p>La adopción de IA y BI en la gestión de datos impulsa decisiones más inteligentes, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -226,23 +230,39 @@ export const Text: any = {
             },
             Description: {
                 Title: 'RPA y Transformación Digital',
-                Text1: 'Servicio de automatización inteligente para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización.',
+                Text1: 'Ofrecemos un servicio integral de automatización de procesos diseñado para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización, más allá de cualquier herramienta o tecnología específica.',
                 Img: './assets/images/automation_service.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: `<p>La automatización de procesos permite ejecutar de forma autónoma tareas repetitivas y coordinar flujos de trabajo complejos en procesos de negocio y operaciones tecnológicas.</p> 
+                Text2: `<p>La automatización de procesos permite ejecutar de manera autónoma tareas repetitivas, coordinar flujos complejos y mejorar la eficiencia en procesos de negocio y operaciones tecnológicas, liberando tiempo para actividades de mayor valor estratégico.</p>
                         </br>
-                        <p>En ETL Soluciones aplicamos un enfoque de mejora continua respaldado por IA a través de:</p>
-                        </br>
+                        <p><strong>Nuestro enfoque de mejora continua incluye:</strong></p>
                         <ul class="list" >
-                            <li><strong>RPA inteligente:</strong> robots capaces de aprender y adaptarse a los procesos.</li>
-                            <li><strong>Procesamiento inteligente de documentos:</strong> extracción y clasificación automática de información.</li>
-                            <li><strong>Orquestación de workflows:</strong> coordinación eficiente de procesos entre múltiples sistemas.</li>
-                        </ul> 
+                            <li><strong>Automatización inteligente de tareas:</strong> sistemas capaces de aprender y adaptarse a los procesos.</li>
+                            <li><strong>Procesamiento inteligente de información:</strong> extracción, clasificación y estructuración automática de datos y documentos.</li>
+                            <li><strong>Orquestación de procesos y flujos de trabajo:</strong> coordinación eficiente de actividades entre múltiples sistemas y plataformas.</li>
+                        </ul>
                         </br>
-                        <p>Estas capacidades se integran con tecnologías RPA, BPM, APIs y orquestación de servicios, logrando continuidad operativa, reducción de tiempos y mayor productividad.</p> 
-                        </br> 
-                        <p>La automatización inteligente permite a las organizaciones enfocarse en actividades de alto valor y avanzar con solidez en su transformación digital.</p>`
+                        <p>Estas capacidades se integran de manera flexible con diferentes tecnologías —RPA, BPM, APIs o plataformas de orquestación— garantizando continuidad operativa, reducción de tiempos y mayor eficiencia sin depender de un producto específico.</p>
+                        </br>
+                        <p>La automatización inteligente permite a las organizaciones concentrarse en actividades de alto valor, optimizar recursos y avanzar con solidez en su transformación digital, creando procesos más ágiles, confiables y escalables.</p>`
             },
+            Features: [
+                {
+                    Icon: 'assets/icons/blocks-and-arrows.png',
+                    Title: 'Eliminación de tareas repetitivas',
+                    Text: 'Eliminación de tareas repetitivas ejecutadas manualmente y que están basadas en reglas de negocio.'
+                },
+                {
+                    Icon: 'assets/icons/data-display.png',
+                    Title: 'Simulación del usuario',
+                    Text: 'Simulación del usuario en interacción y clics frente a una pantalla.'
+                },
+                {
+                    Icon: 'assets/icons/spanner.png',
+                    Title: 'Integración de procesos técnicos',
+                    Text: 'Integración de procesos técnicos sin ejecuciones manuales disminuyendo errores por ejecuciones de analistas y/o usuarios.'
+                }
+            ],
             Contact: {
                 Title: 'Contáctenos',
                 Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
@@ -257,22 +277,21 @@ export const Text: any = {
             },
             Description: {
                 Title: 'Desarrollo Ágil y Entrega Continua',
-                Text1: 'Servicio de desarrollo de software personalizado para crear soluciones escalables, robustas y alineadas con los objetivos estratégicos de su organización.',
+                Text1: 'Ofrecemos servicios de desarrollo de software a medida, diseñados para crear soluciones robustas, escalables y alineadas con los objetivos estratégicos de su organización.',
                 Img: './assets/images/dev_service.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: `<p>Nuestra fábrica de software cubre todo el ciclo de vida del desarrollo: análisis, diseño, construcción, pruebas, despliegue y soporte de aplicaciones web, móviles y sistemas empresariales.</p> 
+                Text2: `<p>Nuestra Fábrica de Software cubre todo el ciclo de vida del desarrollo: análisis, diseño, construcción, pruebas, despliegue y soporte. Trabajamos con diversos entornos de desarrollo y plataformas tecnológicas, integrando prácticas ágiles y capacidades de Inteligencia Artificial para desarrollo asistido, testing predictivo, análisis de código y optimización de performance. Gracias a DevOps y despliegue automatizado, entregamos soluciones seguras, eficientes y escalables, garantizando una experiencia de usuario superior.</p>
                         </br>
-                        <p>El modelo de ETL Soluciones integra prácticas ágiles y capacidades de Inteligencia Artificial como:</p>
-                        </br>
+                        <p><strong>Nuestras capacidades clave incluyen:</strong></p>
                         <ul class="list" >
-                            <li><strong>Desarrollo asistido por IA:</strong> generación de código, detección de errores y optimización.</li>
-                            <li><strong>Testing inteligente:</strong> automatización de pruebas y ampliación de cobertura.</li>
-                            <li><strong>Análisis de código:</strong> revisión continua de calidad, seguridad y buenas prácticas.</li>
-                        </ul> 
+                            <li><strong>Desarrollo asistido por IA:</strong> generación de código, detección de errores y optimización continua.</li>
+                            <li><strong>Testing inteligente:</strong> automatización de pruebas y ampliación de cobertura para garantizar calidad.</li>
+                            <li><strong>Análisis de código:</strong> revisión continua de seguridad, buenas prácticas y performance.</li>
+                        </ul>
                         </br>
-                        <p>Apoyados en DevOps, integración continua y despliegue automatizado, entregamos soluciones robustas, seguras y preparadas para crecer con el negocio.</p> 
-                        </br> 
-                        <p>La combinación de agilidad e IA acelera la innovación y fortalece la ventaja competitiva en el entorno digital.</p>`
+                        <p>Apoyados en DevOps, integración continua y despliegue automatizado, diseñamos soluciones que se adaptan a distintos entornos y tecnologías, asegurando escalabilidad y evolución constante con el negocio.</p>
+                        </br>
+                        <p>La combinación de agilidad, experiencia multitecnológica e Inteligencia Artificial acelera la innovación, fortalece la competitividad digital y garantiza resultados medibles y sostenibles.</p>`
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -288,22 +307,23 @@ export const Text: any = {
             },
             Description: {
                 Title: 'Testing Inteligente y Aseguramiento Continuo',
-                Text1: 'Servicio de aseguramiento de calidad para garantizar que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
+                Text1: 'Ofrecemos un servicio integral de aseguramiento de calidad que garantiza que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
                 Img: './assets/images/qa_service.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: `<p>La calidad de software supervisa y valida cada etapa del desarrollo para asegurar que las soluciones cumplan con estándares técnicos y expectativas del negocio, tanto en sistemas nuevos como existentes.</p> 
+                Text2: `<p>La calidad de software supervisa y valida cada etapa del desarrollo, asegurando que las soluciones cumplan con los requisitos técnicos y objetivos estratégicos del negocio.</p>
                         </br>
-                        <p>Nuestro enfoque incorpora Inteligencia Artificial en:</p>
+                        <p>Nuestro enfoque combina aseguramiento de calidad con asesoría estratégica, identificando oportunidades de mejora, diseñando planes de acción y acompañando su implementación, para entregar soluciones confiables, eficientes y con resultados medibles.</p>
                         </br>
+                        <p><strong>Valor agregado mediante Inteligencia Artificial:</strong></p>
                         <ul class="list" >
-                            <li><strong>Testing predictivo:</strong> identificación temprana de áreas críticas y generación de casos de prueba.</li>
-                            <li><strong>Análisis de defectos:</strong> detección de patrones para prevenir errores recurrentes.</li>
-                            <li><strong>Optimización de performance:</strong> monitoreo y mejora continua del rendimiento.</li>
-                        </ul> 
+                            <li><strong>Testing predictivo:</strong> identificación temprana de áreas críticas y generación de casos de prueba automatizados.</li>
+                            <li><strong>Análisis de defectos:</strong> detección de patrones para prevenir errores recurrentes y mejorar la calidad general.</li>
+                            <li><strong>Optimización de performance:</strong> monitoreo y mejora continua del rendimiento de las aplicaciones.</li>
+                        </ul>
                         </br>
-                        <p>Complementamos estas prácticas con pruebas funcionales, de seguridad, rendimiento y automatización continua, asegurando entregas confiables y de alto nivel.</p> 
-                        </br> 
-                        <p>La calidad impulsada por IA reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida y sostenible.</p>`
+                        <p>Estas capacidades se integran con pruebas funcionales, de seguridad, rendimiento y automatización continua, asegurando entregas confiables, escalables y de alto nivel.</p>
+                        </br>
+                        <p>La calidad impulsada por IA y mejores prácticas reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida, sostenible y orientada a resultados.</p>`
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -454,7 +474,7 @@ export const Text: any = {
         },
         Info: {
             Title: 'Expertos en soluciones de Alto Impacto',
-            Text: 'Somos una empresa joven, con ganas y experiencia de profesionales con más de 10 años en el mercado de servicios de tecnología y Sistemas de información, contamos con la participación en proyectos de alto impacto, desarrollamos soluciones de TI aplicadas en sectores como comunicaciones, transporte, comercio, logística, solidario, salud, legal y servicios.',
+            Text: 'Más de 12 años transformando la tecnología en resultados nos respaldan con experiencia en el desarrollo de soluciones de TI, ejecutadas por un equipo altamente calificado que garantiza el óptimo desempeño y continuidad de los sistemas críticos en cada proyecto de alto impacto.  Nuestra trayectoria abarca sectores como comunicaciones, logística, comercio, financiero, salud, legal y servicios, tanto en el sector público como privado, entregando resultados eficientes, escalables e innovadores.',
             Item: [
                 {
                     titleCard: 'Mejorar',

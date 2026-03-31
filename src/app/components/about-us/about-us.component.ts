@@ -6,6 +6,7 @@ import { InfoAboutUsComponent } from './info-about-us/info-about-us.component';
 import { MisionVisionComponent } from './mision-vision/mision-vision.component';
 import { Text } from '../../helpers/texts';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -14,6 +15,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-us.component.css'
 })
 export class AboutUsComponent implements OnInit {
+
+  constructor(private router: Router) { }
 
   title!: string;
   subTitle!: string;
@@ -31,6 +34,9 @@ export class AboutUsComponent implements OnInit {
   visionText!: string;
 
   ngOnInit(): void {
+
+    this.refreshComponent();
+
     this.title = Text.AboutUs.Title.Title;
     this.subTitle = Text.AboutUs.Title.Text;
     this.image = Text.AboutUs.Title.Img;
@@ -52,5 +58,9 @@ export class AboutUsComponent implements OnInit {
       top: 0,
       left: 0,
     });
+  }
+
+  refreshComponent() {
+    this.router.navigate([this.router.url]);
   }
 }

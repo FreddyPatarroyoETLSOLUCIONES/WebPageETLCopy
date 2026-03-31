@@ -22,10 +22,11 @@ export class ProcessAutomationServiceComponent implements OnInit{
   image!:string;
   subTitleDescription!:string;
   subDescription!:string;
+  features!: {Icon: string, Title: string, Text: string}[];
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  
+
   ngOnInit(): void {
     this.title = Text.Services.ProcessAutomation.Title.Title;
     this.subTitle = Text.Services.ProcessAutomation.Title.Text;
@@ -35,6 +36,7 @@ export class ProcessAutomationServiceComponent implements OnInit{
     this.image = Text.Services.ProcessAutomation.Description.Img;
     this.subTitleDescription = Text.Services.ProcessAutomation.Description.SubTitle;
     this.subDescription = Text.Services.ProcessAutomation.Description.Text2;
+    this.features = Text.Services.ProcessAutomation.Features;
     this.titleContact = Text.Services.ProcessAutomation.Contact.Title;
     this.textContact = Text.Services.ProcessAutomation.Contact.Text;
     this.imageContact = Text.Services.ProcessAutomation.Contact.Img;
