@@ -12,9 +12,9 @@ import { InfoValuesComponent } from './info-values/info-values.component';
   imports: [
     WelcomeComponent,
     CarouselComponent,
-    ProductsComponent,
+    // ProductsComponent,
     AutoScrollComponent,
-    CounterComponent,
+    // CounterComponent,
     SkillsComponent,
     InfoValuesComponent
   ],

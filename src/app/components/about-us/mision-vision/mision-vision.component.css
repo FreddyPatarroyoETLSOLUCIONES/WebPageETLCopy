@@ -12,6 +12,7 @@
 }
 
 .video-wrapper {
+    margin-top: 40px;
     width: 100%;
     border-radius: var(--box_border_radius);
     overflow: hidden;

@@ -1,7 +1,7 @@
 .sub_footer {
     background: var(--accent_color);
     padding: 40px 40px 0 40px;
-    border-radius: 70px 70px 0px 0px;
+    border-radius: 0px;
     box-shadow: var(--box-shadow_two_sides);
     overflow: hidden;
 }

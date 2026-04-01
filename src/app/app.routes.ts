@@ -20,10 +20,11 @@ export const routes: Routes = [
     {path: 'services/processAutomationService', component: ProcessAutomationServiceComponent},
     {path: 'services/softwareFactoryService', component: SoftwareFactoryServiceComponent},
     {path: 'services/softwareQualityService', component: SoftwareQualityServiceComponent},
-    {path: 'products/infocusnwesProduct', component: InfocusnewsProductComponent},
-    {path: 'products/businessIntelligenceProduct', component: BusinessIntelligenceProductComponent},
-    {path: 'products/innovationProduct', component: InnovationProductComponent},
+    // {path: 'products/infocusnwesProduct', component: InfocusnewsProductComponent},
+    // {path: 'products/businessIntelligenceProduct', component: BusinessIntelligenceProductComponent},
+    // {path: 'products/innovationProduct', component: InnovationProductComponent},
     {path: 'aboutUs', component: AboutUsComponent},
+    {path: '**', redirectTo: 'principal' }
 
     //{path: 'services/environmentAutomation', component: EnvironmentAutomationServiceComponent},//Esta ruta se debe validar con el cliente
 ];

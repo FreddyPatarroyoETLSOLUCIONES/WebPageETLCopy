@@ -9,11 +9,11 @@ export const Text: any = {
                 {subTitle: 'Fabrica de Software', link:'/services/softwareFactoryService'},
                 {subTitle: 'Calidad de Software', link:'/services/softwareQualityService'},
             ], link:''},
-            {title: 'Productos', subMenu: [
-                {subTitle: 'Infocusnews', link:'/products/infocusnwesProduct'},
-                {subTitle: 'Business Intelligence', link:'/products/businessIntelligenceProduct'},
-                {subTitle: 'Innovación', link:'/products/innovationProduct'},
-            ], link:''},
+            // {title: 'Productos', subMenu: [
+            //     {subTitle: 'Infocusnews', link:'/products/infocusnwesProduct'},
+            //     {subTitle: 'Business Intelligence', link:'/products/businessIntelligenceProduct'},
+            //     {subTitle: 'Innovación', link:'/products/innovationProduct'},
+            // ], link:''},
             {title: 'Nosotros', subMenu: [], link:'/aboutUs'}
         ]
     },
@@ -21,11 +21,11 @@ export const Text: any = {
         Welcome: {
             Title1: 'El camino de la Evolución Digital',
             Subtitle1: 'Soluciones Tecnológicas de Alto Impacto',
-            Text1: 'Integramos tecnología, datos y automatización para fortalecer la operación de organizaciones de diferentes industrias y sectores. Contamos con más de 12 años de experiencia desarrollando soluciones eficientes, escalables y orientadas a resultados.'
+            Text1: 'Integramos tecnología, datos, automatización e Inteligencia Artificial para fortalecer la operación de organizaciones de diferentes industrias y sectores. Contamos con más de 12 años de experiencia desarrollando soluciones eficientes, escalables y orientadas a resultados.'
         },
         Services: {
             Title: 'SERVICIOS TI',
-            Text: 'A través de las mejores prácticas de TI, damos soluciones de gran valor a nuestros clientes a través de nuestros servicios.',
+            Text: 'A través de las mejores prácticas de TI, ofrecemos soluciones de gran valor a nuestros clientes mediante nuestros servicios.',
             ServicesList: [
                 {
                     title: 'Gestión de Operaciones de TI',

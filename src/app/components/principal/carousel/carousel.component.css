@@ -63,8 +63,10 @@
 }
 .servicio-content .image {
     min-height: 50%;
+    max-width: 50%;
+    object-fit: cover;
     border-radius: 55px;
-    box-shadow: -25px -21px 0px -3px rgba(0, 177, 237, 1);
+    box-shadow: -25px -21px 0px -3px rgba(0, 177, 237, 0.3);
 }
 .text-content h3 {
     font-size: 2rem;
@@ -127,6 +129,7 @@ ul {
     .servicio-content .image {
         box-shadow: none;
         width: calc(100vw - 100px);
+        max-width: 100%;
         z-index: 100;
         border-radius: 30px;
     }
@@ -163,5 +166,24 @@ ul {
     }
     .servicio-header .description {
         max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .servicio-content .image {
+        width: calc(100vw - 10px);
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    .servicio-content {
+        width: calc(100vw - 10px);
+    }
+    .text-content {
+        width: calc(100vw - 60px);
+        padding: 30px;
+        padding-top: 70px;
+    }
+    .servicio-card {
+        width: 95%;
     }
 }

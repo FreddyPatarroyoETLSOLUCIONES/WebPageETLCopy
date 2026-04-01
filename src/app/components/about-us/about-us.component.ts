@@ -10,7 +10,13 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
-  imports: [WelcomeAboutUsComponent, CounterComponent, AbilityComponent, InfoAboutUsComponent, MisionVisionComponent, CommonModule],
+  imports: [
+    WelcomeAboutUsComponent, 
+    // CounterComponent,
+    AbilityComponent, 
+    InfoAboutUsComponent, 
+    MisionVisionComponent, 
+    CommonModule],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })

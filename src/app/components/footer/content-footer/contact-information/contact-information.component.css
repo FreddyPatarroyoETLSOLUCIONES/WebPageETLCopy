@@ -1,6 +1,18 @@
+:host {
+    flex: 1;
+    display: block;
+}
+
 .contact_information {
-    width: 80%;
+    width: 100%;
     margin: auto;
+}
+
+.contact_information .title {
+    font-size: 2.2rem;
+    font-weight: var(--font_weight_extra_bold);
+    color: var(--text_color);
+    margin-bottom: 16px;
 }
 
 .contact_information .text {
@@ -14,7 +26,7 @@
 
 .contact_information .content_contact .row_info {
     display: flex;
-    flex-direction: row_info;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
@@ -26,49 +38,38 @@
     text-align: center;
 }
 
-.contact_information .content_contact .row_info .content_info img {
-    width: 50px;
-    text-align: center;
+.contact_information .content_contact .row_info .content_info .icon_circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+}
+
+.contact_information .content_contact .row_info .content_info .icon_circle img {
+    width: 26px;
+    height: 26px;
+    filter: brightness(0) invert(1);
 }
 
 .contact_information .content_contact .row_info .content_info p {
     color: var(--text_color);
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
-.contact_information .map {
-    width: 90%;
-    margin: auto;
-    border-radius: 0px 40px 0px 40px;
-    box-shadow: var(--box-shadow);
-}
-
-.contact_information .map iframe {
-    width: 100%;
-    border-radius: 0px 40px 0px 40px;
-}
-
-.background_logo {
-    position: absolute;
-    z-index: -1;
-    margin: auto;
-    width: 45%;
-}
-
-@media only screen and (max-width: 1550px) {
-    .background_logo {
-        width: 35%;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .background_logo {
-        position: relative;
-        display: none;
-    }
+.contact_information .content_contact .row_info .content_info p.info {
+    opacity: 0.75;
+    font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 1200px) {
+    .contact_information .title {
+        text-align: center;
+    }
+
     .contact_information .text {
         text-align: center;
         width: 100%;
@@ -86,19 +87,15 @@
 
     .contact_information .content_contact .row_info .content_info {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .contact_information .map,
-    .contact_information .map iframe {
-        border-radius: 20px;
-        width: 100%;
-    }
-
-
 }
 
 @media only screen and (max-width: 450px) {
     .contact_information .content_contact .row_info {
         flex-direction: column;
+        gap: 30px;
     }
 }
