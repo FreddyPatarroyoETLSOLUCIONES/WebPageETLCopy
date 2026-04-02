@@ -545,13 +545,13 @@ export const Text: any = {
                     ]
                 },
                 {
-                    title: 'IDE',
+                    title: 'Automatización',
                     frontImage: 'assets/icons/text-recognition.png',
                     description: [
-                        'Visual Studio 2008-2007',
-                        'Toad',
-                        'Delphi',
-                        'NetBeans'
+                        'UiPath',
+                        'Power Automate',
+                        'Google Workspace',
+                        'Python'
                     ]
                 },
                 {
