@@ -11,7 +11,13 @@
           </div>
           <div class="card_back">
             <p class="card_title">{{ ability.title }}</p>
-            <p class="card_desc">{{ ability.description.join(', ') }}</p>
+            <p class="card_desc">{{ ability.description}}</p>
+            <p class="card_title card_subtitle">Tecnologías: </p>
+            <p class="card_desc">{{ ability.tecnologies.join(', ') }}</p>
+            <p class="card_title card_subtitle">Valor: </p>
+            <ul class="card_value">
+              <li *ngFor="let value of ability.value">{{ value }}</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Document / list background -->
+  <rect x="8" y="6" width="36" height="48" rx="4" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  <!-- Folded corner -->
+  <path d="M36 6 L44 14 L36 14 Z" fill="#00d4ff" opacity="0.4"/>
+  <path d="M36 6 L36 14 L44 14" stroke="#00d4ff" stroke-width="1.5" fill="none"/>
+  <!-- List rows with strikethrough -->
+  <line x1="14" y1="22" x2="34" y2="22" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" stroke-dasharray="2 1"/>
+  <line x1="14" y1="22" x2="34" y2="22" stroke="#ff4d4d" stroke-width="1.5"/>
+  <circle cx="11" cy="22" r="2" fill="#ff4d4d"/>
+
+  <line x1="14" y1="30" x2="34" y2="30" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" stroke-dasharray="2 1"/>
+  <line x1="14" y1="30" x2="34" y2="30" stroke="#ff4d4d" stroke-width="1.5"/>
+  <circle cx="11" cy="30" r="2" fill="#ff4d4d"/>
+
+  <line x1="14" y1="38" x2="34" y2="38" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" stroke-dasharray="2 1"/>
+  <line x1="14" y1="38" x2="34" y2="38" stroke="#ff4d4d" stroke-width="1.5"/>
+  <circle cx="11" cy="38" r="2" fill="#ff4d4d"/>
+
+  <!-- Gear / automation badge (bottom right) -->
+  <circle cx="48" cy="46" r="12" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  <circle cx="48" cy="46" r="5" fill="none" stroke="#00d4ff" stroke-width="2"/>
+  <!-- Gear teeth -->
+  <rect x="46.5" y="32" width="3" height="4" rx="1" fill="#00d4ff"/>
+  <rect x="46.5" y="56" width="3" height="4" rx="1" fill="#00d4ff"/>
+  <rect x="34" y="44.5" width="4" height="3" rx="1" fill="#00d4ff"/>
+  <rect x="58" y="44.5" width="4" height="3" rx="1" fill="#00d4ff"/>
+  <rect x="37.8" y="36.8" width="4" height="3" rx="1" fill="#00d4ff" transform="rotate(45 39.8 38.3)"/>
+  <rect x="56.8" y="55.8" width="4" height="3" rx="1" fill="#00d4ff" transform="rotate(45 58.8 57.3)"/>
+  <rect x="37.8" y="54.8" width="4" height="3" rx="1" fill="#00d4ff" transform="rotate(-45 39.8 56.3)"/>
+  <rect x="56.8" y="35.8" width="4" height="3" rx="1" fill="#00d4ff" transform="rotate(-45 58.8 37.3)"/>
+  <!-- Lightning bolt inside gear (speed/automation) -->
+  <path d="M50 41 L46 46 L49 46 L46 51 L52 45 L49 45 Z" fill="#00d4ff"/>
+</svg>

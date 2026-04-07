@@ -70,14 +70,16 @@ export const Text: any = {
             ]
         },
         Skills: {
-            Title1: 'Proyectos, Requerimientos, Soporte y Mantenimiento',
+            Title1: 'Gestión de Operaciones de TI, Datos, Automatización, Fábrica y Calidad de Software',
             SkillsList: [
-                'Manejo de Solicitudes de desarrollo.',
-                'Liderazgo del proyecto end to end.',
-                'Gestión de Solicitudes: Incidencias, requerimientos y proyectos.',
-                'Construcción y liberación con “victorias tempranas”.',
-                'Piezas de software solventes, autónomas y de valor para el negocio.',
-                'Análisis de las inquietudes del negocios para traducirlas en iniciativas de tecnología de rápida y solvente aplicación.'
+                'Manejo integral de la operación tecnológica.',
+                'Automatización de procesos orientada a eficiencia y reducción de errores.',
+                'Soluciones tecnológicas robustas, autónomas y de alto valor para el negocio.',
+                'Gestión y gobierno de datos para la toma de decisiones.',
+                'Desarrollo de soluciones mediante fábrica de software.',
+                'Aseguramiento de la calidad en todo el ciclo de vida del software.',
+                'Construcción y liberación con enfoque en “victorias tempranas”.',
+                'Análisis de las necesidades del negocio para traducirlas en iniciativas tecnológicas ágiles y efectivas.'
             ]
         },
         Products: {
@@ -160,7 +162,7 @@ export const Text: any = {
             Title:{
                 Title: 'Gestión de Operaciones de TI',
                 Text: 'Garantizamos la eficiencia y disponibilidad de su infraestructura tecnológica',
-                Img: './assets/wallpapers/wallp_consultoria.jpg'
+                Img: './assets/wallpapers/wallp_consultoria.png'
             },
             Description: {
                 Title: 'Supervisión y Optimización Continua',
@@ -248,7 +250,7 @@ export const Text: any = {
             },
             Features: [
                 {
-                    Icon: 'assets/icons/blocks-and-arrows.png',
+                    Icon: 'assets/icons/tareas-repetitivas.png',
                     Title: 'Eliminación de tareas repetitivas',
                     Text: 'Eliminación de tareas repetitivas ejecutadas manualmente y que están basadas en reglas de negocio.'
                 },
@@ -477,15 +479,15 @@ export const Text: any = {
             Text: 'Más de 12 años transformando la tecnología en resultados nos respaldan con experiencia en el desarrollo de soluciones de TI, ejecutadas por un equipo altamente calificado que garantiza el óptimo desempeño y continuidad de los sistemas críticos en cada proyecto de alto impacto.  Nuestra trayectoria abarca sectores como comunicaciones, logística, comercio, financiero, salud, legal y servicios, tanto en el sector público como privado, entregando resultados eficientes, escalables e innovadores.',
             Item: [
                 {
-                    titleCard: 'Mejorar',
-                    descriptionCard: 'Modernización de aplicaciones existentes.'
+                    titleCard: 'Calidad de Datos',
+                    descriptionCard: 'Aseguramos datos confiables, consistentes y alineados al negocio.'
                 },
                 {
-                    titleCard: 'Diseñar y Mejorar',
+                    titleCard: 'Desarrollo y Mejora',
                     descriptionCard: 'Diseño y desarrollo de aplicaciones Web y Desktop, configurable, escalables y seguras.'
                 },
                 {
-                    titleCard: 'Mantener y Soportar',
+                    titleCard: 'Mantenimiento y Soporte',
                     descriptionCard: 'Integración de aplicaciones y servicios.'
                 }
             ]
@@ -495,81 +497,154 @@ export const Text: any = {
             SubTitle: 'Software a la medida',
             Abilities: [
                 {
-                    title: 'Tecnologías de Presentación',
-                    frontImage: 'assets/icons/sphere.png',
-                    description: [
-                        'Aplicaciones Web Responsive: ASP. Net Web Forms',
-                        'ASP.Net MVC, HTML5, CSS3, Ajax',
-                        'JavaServer Pages (JSP)'
-                    ]
-                },
-                {
-                    title: 'Tecnologías de Capas Intermedias y Servicios Distribuidos',
-                    frontImage: 'assets/icons/blocks-and-arrows.png',
-                    description: [
-                        '.NET Remoting',
-                        '.Net Web Services',
-                        'Windows Communications Foundation (WCF)',
-                        'ASP.NET Web API 2 (Servicios REST)',
-                        'Azure Appfabric',
-                        'OSB (Oracle Service Bus)'
-                    ]
-                },
-                {
-                    title: 'Acceso a Datos y ORM',
+                    title: 'Integración de Datos (ETL / ELT)',
                     frontImage: 'assets/icons/data-display.png',
-                    description: ['ODBC', 'ADO', 'ADO.NET', 'Entity Framework', 'Hibernate']
+                    description: 'Diseñamos soluciones que conectan sistemas, eliminan silos de información y garantizan datos confiables.',
+                    tecnologies: [
+                        'Oracle Data Integrator (ODI)',
+                        'Talend',
+                        ' Pentaho',
+                        'SSIS',
+                        'Apache NiFi'
+                    ],
+                    value:[
+                        "Migraciones masivas de datos.",
+                        "Integración entre sistemas legacy y modernos.",
+                        "Procesos robustos y escalables."
+                    ]
                 },
                 {
-                    title: 'Base de Datos',
+                    title: 'Bases de Datos & Data Platforms',
                     frontImage: 'assets/icons/database-code.png',
-                    description: [
-                        'SQL Server 2008-2007',
-                        'MySQL (4.x,5.x)',
-                        'Oracle NoSQL (MongoDB, Oracle y otros)',
-                        'ETL, Teradata, Integración de Datos, SSIS'
+                    description: 'Gestionamos plataformas de datos orientadas a rendimiento, calidad y disponibilidad.',
+                    tecnologies: [
+                        "Oracle",
+                        "Snowflake",
+                        "SQL Server",
+                        "PostgreSQL",
+                        "MySQL / MariaDB",
+                        "Teradata",
+                        "Amazon RDS",
+                        "NoSQL / MongoDB"
+                    ],
+                    value:[
+                        "Optimización de consultas.",
+                        "Modelado de datos empresarial.",
+                        "Procesamiento de grandes volúmenes."
                     ]
                 },
                 {
-                    title: 'Workflows',
-                    frontImage: 'assets/icons/spanner.png',
-                    description: ['Windows Workflow Foundation (WPF)']
-                },
-                {
-                    title: 'Reportes',
-                    frontImage: 'assets/icons/log.png',
-                    description: [
-                        'SQL Server Reporting Services',
-                        'Oracle Reports',
-                        'Crystal Reports'
+                    title: 'Cloud & Arquitecturas Modernas',
+                    frontImage: 'assets/icons/sphere.png',
+                    description: 'Diseñamos soluciones escalables en la nube que acompañan el crecimiento del negocio.',
+                    tecnologies: [
+                        "AWS (RDS, S3, Lambda, EC2)",
+                        "Azure (Data Factory, Synapse)",
+                        "Google Cloud"
+                    ],
+                    value:[
+                        "Capacidad de mover cargas entre nubes o entornos.",
+                        "Uso de servicios gestionados.",
+                        "Capacidad de comunicarse con diferentes sistemas."
                     ]
                 },
                 {
-                    title: 'Automatización',
-                    frontImage: 'assets/icons/text-recognition.png',
-                    description: [
-                        'UiPath',
-                        'Power Automate',
-                        'Google Workspace',
-                        'Python'
-                    ]
-                },
-                {
-                    title: 'Frameworks',
-                    frontImage: 'assets/icons/folder-code-one.png',
-                    description: ['.NET 1.1-4.6', 'Java EE', 'Spring Framework', 'JBoss Seam']
-                },
-                {
-                    title: 'Lenguajes',
+                    title: 'Desarrollo de Software & APIs',
                     frontImage: 'assets/icons/file-code.png',
-                    description: [
-                        'C, C++',
-                        'C#, Visual Basic, VB.NET',
-                        'Java, HTML, JavaScript',
-                        'XML, XAML',
-                        'T-SQL, PL-SQL',
-                        'RPG, MongoDB, Teradata',
-                        'Shell Script, Object Pascal y otros'
+                    description: 'Desarrollamos soluciones empresariales robustas, integrables y orientadas a microservicios.',
+                    tecnologies: [
+                        '.NET (C#, ASP.NET Core, Web APIs)',
+                        'Node.js / NestJS',
+                        'Java (Spring Boot)',
+                        'Python (FastAPI / Flask)',
+                        'Angular',
+                        'React',
+                        'Flutter',
+                        'React Native',
+                        'Ionic'
+                    ],
+                    value: [
+                        'Desarrollo de aplicaciones empresariales.',
+                        'Integración de sistemas.',
+                        'APIs REST / SOAP.',
+                        'Arquitecturas desacopladas.'
+                    ]
+                },
+                {
+                    title: 'Automatización & RPA',
+                    frontImage: 'assets/icons/automation-rpa.svg',
+                    description: 'Automatizamos procesos para reducir costos, errores y tiempos operativos.',
+                    tecnologies: [
+                        'UiPath, Automation Anywhere',
+                        'Power Automate',
+                        'Scripts (Python / Shell)',
+                        'Google Workspace',
+                        'N8N'
+                    ],
+                    value: [
+                        'Reducción de costos operativos.',
+                        'Minimización de errores humanos.',
+                        'Optimización de tiempos de ejecución.',
+                    ]
+                },
+                {
+                    title: 'Analítica & Business Intelligence',
+                    frontImage: 'assets/icons/analytics-bi.svg',
+                    description: 'Convertimos los datos en información estratégica para la toma de decisiones.',
+                    tecnologies: [
+                        'Power BI',
+                        'Tableau',
+                        'Oracle Analytics'
+                    ],
+                    value: [
+                        'Toma de decisiones basada en datos.',
+                        'Visualización de indicadores clave.',
+                        'Análisis predictivo y descriptivo.',
+                        'Dashboards interactivos.'
+                    ]
+                },
+                {
+                    title: 'DevOps & Contenedores',
+                    frontImage: 'assets/icons/folder-code-one.png',
+                    description: 'Implementamos prácticas modernas para acelerar el desarrollo y despliegue.',
+                    tecnologies: [
+                        'Docker, Kubernetes, OpenShift',
+                        'Git, CI/CD',
+                        'Azure Dev Ops',
+                        'Jenkins'
+                    ],
+                    value: [
+                        'Aceleración del ciclo de desarrollo.',
+                        'Despliegues continuos y confiables.',
+                        'Escalabilidad y portabilidad de aplicaciones.'
+                    ]
+                },
+                {
+                    title: 'Integración de Aplicaciones',
+                    frontImage: 'assets/icons/spanner.png',
+                    description: 'Diseñamos soluciones que orquestan sistemas complejos y garantizan una conectividad escalable y robusta.',
+                    tecnologies: [
+                        'Mulesoft',
+                        'TIBCO'
+                    ],
+                    value: [
+                        'Garantizar que la información viaje al instante.',
+                        'Asegurar que solo las personas y sistemas correctos tengan acceso.',
+                        'Procesos robustos y escalables.'
+                    ]
+                },
+                {
+                    title: 'Diseños UX/UI',
+                    frontImage: 'assets/icons/ux-ui-design.svg',
+                    description: 'Diseñamos interfaces visuales que unifican el producto, eliminan la inconsistencia estética, garantizando sistemas de diseño escalables y experiencias digitales fluidas.',
+                    tecnologies: [
+                        'Figma',
+                        'Adobe XD'
+                    ],
+                    value: [
+                        'Sistemas de diseño escalables y consistentes',
+                        'Modernización de interfaces',
+                        'Experiencias digitales fluidas'
                     ]
                 }
             ]

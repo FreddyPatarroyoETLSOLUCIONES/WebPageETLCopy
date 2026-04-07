@@ -14,7 +14,7 @@ import { InfoValuesComponent } from './info-values/info-values.component';
     CarouselComponent,
     // ProductsComponent,
     AutoScrollComponent,
-    // CounterComponent,
+    CounterComponent,
     SkillsComponent,
     InfoValuesComponent
   ],

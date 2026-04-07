@@ -31,7 +31,10 @@
 /* === FLIP CARD === */
 .skill_card{
     width: 30%;
-    min-height: 38vh;
+    min-height: 400px;
+    max-height: 400px;
+    height: auto;
+    /* min-height: 38vh; -- Se valida si va la sección de valor*/
     perspective: 1000px;
 }
 .card_front .card_title{
@@ -48,10 +51,21 @@
     margin: 0;
     text-align: center;
 }
+.card_back .card_subtitle{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary_color);
+    text-align: left;
+}
 .card_desc{
     font-size: 0.85rem;
     line-height: 1.6;
     margin: 0;
+}
+.card_value{
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: left;
 }
 .flip_card_inner{
     position: relative;

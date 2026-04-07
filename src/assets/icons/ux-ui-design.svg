@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Browser/wireframe window -->
+  <rect x="4" y="8" width="56" height="48" rx="5" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="4" y="8" width="56" height="12" rx="5" fill="#00d4ff" opacity="0.3"/>
+  <line x1="4" y1="20" x2="60" y2="20" stroke="#00d4ff" stroke-width="1.5"/>
+  <!-- Window buttons -->
+  <circle cx="13" cy="14" r="2.5" fill="#ff5f57"/>
+  <circle cx="21" cy="14" r="2.5" fill="#febc2e"/>
+  <circle cx="29" cy="14" r="2.5" fill="#28c840"/>
+  <!-- Wireframe header block -->
+  <rect x="10" y="24" width="44" height="7" rx="2" fill="#00d4ff" opacity="0.4"/>
+  <!-- Wireframe columns -->
+  <rect x="10" y="35" width="20" height="16" rx="2" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="34" y="35" width="20" height="7" rx="2" fill="#00d4ff" opacity="0.25"/>
+  <rect x="34" y="44" width="20" height="7" rx="2" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <!-- Cursor pointer -->
+  <path d="M20 42 L20 50 L23 47 L26 52 L28 51 L25 46 L29 46 Z" fill="#ffffff" stroke="#1a1a2e" stroke-width="0.8"/>
+</svg>

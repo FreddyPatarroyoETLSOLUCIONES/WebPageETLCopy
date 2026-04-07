@@ -16,7 +16,7 @@ export class CounterComponent {
   private counters = [
     { element: 'counter1', target: 100, duration: 1500, addPlus: true },
     { element: 'counter2', target: 700000, duration: 1500, addPlus: false },
-    { element: 'counter3', target: 9, duration: 1500, addPlus: true },
+    { element: 'counter3', target: 12, duration: 1500, addPlus: true },
     { element: 'counter4', target: 45, duration: 1800, addPlus: true }
   ];
 
