@@ -29,9 +29,11 @@
   }
   
   .banner-content p {
-    font-size: 1.8rem;
-    font-weight: 100;
-    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
   }
   
   @media only screen and (max-width: 1200px){

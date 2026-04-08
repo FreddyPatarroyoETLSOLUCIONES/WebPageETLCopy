@@ -572,7 +572,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Automatización & RPA',
-                    frontImage: 'assets/icons/automation-rpa.svg',
+                    frontImage: 'assets/icons/automation-rpa.png',
                     description: 'Automatizamos procesos para reducir costos, errores y tiempos operativos.',
                     tecnologies: [
                         'UiPath, Automation Anywhere',
@@ -589,7 +589,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Analítica & Business Intelligence',
-                    frontImage: 'assets/icons/analytics-bi.svg',
+                    frontImage: 'assets/icons/analytics-bi.png',
                     description: 'Convertimos los datos en información estratégica para la toma de decisiones.',
                     tecnologies: [
                         'Power BI',
@@ -635,7 +635,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Diseños UX/UI',
-                    frontImage: 'assets/icons/ux-ui-design.svg',
+                    frontImage: 'assets/icons/ux-ui-design.png',
                     description: 'Diseñamos interfaces visuales que unifican el producto, eliminan la inconsistencia estética, garantizando sistemas de diseño escalables y experiencias digitales fluidas.',
                     tecnologies: [
                         'Figma',
@@ -683,11 +683,11 @@ export const Text: any = {
             Menu: [
                 'Inicio',
                 'Servicio',
-                'Productos',
+                //'Productos',
                 'Nosotros',
             ],
             Img:"./assets/images/image1.png",
-            Text2: "&copy; 2024 ETL Soluciones. Todos los derechos reservados."
+            Text2: "&copy; 2026 ETL Soluciones. Todos los derechos reservados."
         }
     }
 }

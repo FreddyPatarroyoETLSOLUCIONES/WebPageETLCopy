@@ -9,8 +9,9 @@
 }
 .ability h3{
     color: var(--text_color);
-    font-weight: 200;
-    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 300 !important;
+    font-style: normal;
 }
 .ability h2{
     color: var(--primary_color);
