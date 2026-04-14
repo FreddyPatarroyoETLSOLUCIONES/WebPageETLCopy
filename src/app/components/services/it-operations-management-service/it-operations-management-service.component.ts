@@ -24,7 +24,8 @@ export class ItOperationsManagementServiceComponent implements OnInit{
     titleContact!:string;
     textContact!:string;
     imageContact!:string;
-    
+    videoUrl?: string;
+
     ngOnInit(): void {
       this.title = Text.Services.ItOperationsManagement.Title.Title;
       this.subTitle = Text.Services.ItOperationsManagement.Title.Text;
@@ -34,6 +35,7 @@ export class ItOperationsManagementServiceComponent implements OnInit{
       this.image = Text.Services.ItOperationsManagement.Description.Img;
       this.subTitleDescription = Text.Services.ItOperationsManagement.Description.SubTitle;
       this.subDescription = Text.Services.ItOperationsManagement.Description.Text2;
+      this.videoUrl = Text.Services.ItOperationsManagement.Description.VideoUrl || undefined;
       this.titleContact = Text.Services.ItOperationsManagement.Contact.Title;
       this.textContact = Text.Services.ItOperationsManagement.Contact.Text;
       this.imageContact = Text.Services.ItOperationsManagement.Contact.Img;

@@ -181,7 +181,8 @@ export const Text: any = {
                         </br> 
                         <p>Combinamos estas capacidades con automatización de monitoreo, gestión de errores conocidos y despliegues continuos, garantizando estabilidad, eficiencia y alto desempeño.</p>
                         </br> 
-                        <p>Adoptar IA y automatización no solo mejora la operación actual, sino que prepara a las organizaciones para un entorno tecnológico más ágil, resiliente y competitivo.</p>`
+                        <p>Adoptar IA y automatización no solo mejora la operación actual, sino que prepara a las organizaciones para un entorno tecnológico más ágil, resiliente y competitivo.</p>`,
+                VideoUrl: 'https://www.youtube.com/watch?v=WhyAB4_oF-g'
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -216,7 +217,8 @@ export const Text: any = {
                         </br>
                         <p>Estas capacidades se complementan con monitoreo continuo y cumplimiento normativo, asegurando confiabilidad y máximo aprovechamiento estratégico de la información.</p>
                         </br>
-                        <p>La adopción de IA y BI en la gestión de datos impulsa decisiones más inteligentes, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`
+                        <p>La adopción de IA y BI en la gestión de datos impulsa decisiones más inteligentes, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`,
+                VideoUrl: 'https://www.youtube.com/watch?v=ueqF4nue81I'
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -246,7 +248,8 @@ export const Text: any = {
                         </br>
                         <p>Estas capacidades se integran de manera flexible con diferentes tecnologías —RPA, BPM, APIs o plataformas de orquestación— garantizando continuidad operativa, reducción de tiempos y mayor eficiencia sin depender de un producto específico.</p>
                         </br>
-                        <p>La automatización inteligente permite a las organizaciones concentrarse en actividades de alto valor, optimizar recursos y avanzar con solidez en su transformación digital, creando procesos más ágiles, confiables y escalables.</p>`
+                        <p>La automatización inteligente permite a las organizaciones concentrarse en actividades de alto valor, optimizar recursos y avanzar con solidez en su transformación digital, creando procesos más ágiles, confiables y escalables.</p>`,
+                VideoUrl: 'https://www.youtube.com/watch?v=gv-rbR2PT5s'
             },
             Features: [
                 {
@@ -293,7 +296,8 @@ export const Text: any = {
                         </br>
                         <p>Apoyados en DevOps, integración continua y despliegue automatizado, diseñamos soluciones que se adaptan a distintos entornos y tecnologías, asegurando escalabilidad y evolución constante con el negocio.</p>
                         </br>
-                        <p>La combinación de agilidad, experiencia multitecnológica e Inteligencia Artificial acelera la innovación, fortalece la competitividad digital y garantiza resultados medibles y sostenibles.</p>`
+                        <p>La combinación de agilidad, experiencia multitecnológica e Inteligencia Artificial acelera la innovación, fortalece la competitividad digital y garantiza resultados medibles y sostenibles.</p>`,
+                VideoUrl: 'https://www.youtube.com/watch?v=_VoaH8RT5vA'
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -325,7 +329,8 @@ export const Text: any = {
                         </br>
                         <p>Estas capacidades se integran con pruebas funcionales, de seguridad, rendimiento y automatización continua, asegurando entregas confiables, escalables y de alto nivel.</p>
                         </br>
-                        <p>La calidad impulsada por IA y mejores prácticas reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida, sostenible y orientada a resultados.</p>`
+                        <p>La calidad impulsada por IA y mejores prácticas reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida, sostenible y orientada a resultados.</p>`,
+                VideoUrl: 'https://www.youtube.com/watch?v=tGCwLo4kPw0'
             },
             Contact: {
                 Title: 'Contáctenos',

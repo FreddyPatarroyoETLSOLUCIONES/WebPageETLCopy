@@ -15,6 +15,7 @@ export class DescriptionComponent implements OnInit{
   @Input() subTitleDescription!:string;
   @Input() subDescription!:string;
   @Input() features?: {Icon: string, Title: string, Text: string}[];
+  @Input() videoUrl?: string;
 
   ngOnInit(): void {
   }

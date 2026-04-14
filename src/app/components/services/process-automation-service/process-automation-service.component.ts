@@ -26,6 +26,7 @@ export class ProcessAutomationServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
+  videoUrl?: string;
 
   ngOnInit(): void {
     this.title = Text.Services.ProcessAutomation.Title.Title;
@@ -36,6 +37,7 @@ export class ProcessAutomationServiceComponent implements OnInit{
     this.image = Text.Services.ProcessAutomation.Description.Img;
     this.subTitleDescription = Text.Services.ProcessAutomation.Description.SubTitle;
     this.subDescription = Text.Services.ProcessAutomation.Description.Text2;
+    this.videoUrl = Text.Services.ProcessAutomation.Description.VideoUrl || undefined;
     this.features = Text.Services.ProcessAutomation.Features;
     this.titleContact = Text.Services.ProcessAutomation.Contact.Title;
     this.textContact = Text.Services.ProcessAutomation.Contact.Text;

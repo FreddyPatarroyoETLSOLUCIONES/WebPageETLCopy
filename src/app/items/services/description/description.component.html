@@ -17,6 +17,16 @@
         <div class="text-container">
           <h3> {{subTitleDescription}} </h3>
           <div [innerHTML]="subDescription"></div>
+          @if (videoUrl) {
+            <div class="video-btn-container">
+              <a [href]="videoUrl" target="_blank" rel="noopener noreferrer" class="custom_button">
+                <span class="button_text">Ver video</span>
+                <svg class="button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </a>
+            </div>
+          }
         </div>
       </div>
       @if (features && features.length > 0) {

@@ -24,7 +24,8 @@ export class SoftwareFactoryServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  
+  videoUrl?: string;
+
   ngOnInit(): void {
     this.title = Text.Services.SoftwareFactory.Title.Title;
     this.subTitle = Text.Services.SoftwareFactory.Title.Text;
@@ -34,6 +35,7 @@ export class SoftwareFactoryServiceComponent implements OnInit{
     this.image = Text.Services.SoftwareFactory.Description.Img;
     this.subTitleDescription = Text.Services.SoftwareFactory.Description.SubTitle;
     this.subDescription = Text.Services.SoftwareFactory.Description.Text2;
+    this.videoUrl = Text.Services.SoftwareFactory.Description.VideoUrl || undefined;
     this.titleContact = Text.Services.SoftwareFactory.Contact.Title;
     this.textContact = Text.Services.SoftwareFactory.Contact.Text;
     this.imageContact = Text.Services.SoftwareFactory.Contact.Img;

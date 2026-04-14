@@ -24,7 +24,8 @@ export class SoftwareQualityServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  
+  videoUrl?: string;
+
   ngOnInit(): void {
     this.title = Text.Services.SoftwareQuality.Title.Title;
     this.subTitle = Text.Services.SoftwareQuality.Title.Text;
@@ -34,6 +35,7 @@ export class SoftwareQualityServiceComponent implements OnInit{
     this.image = Text.Services.SoftwareQuality.Description.Img;
     this.subTitleDescription = Text.Services.SoftwareQuality.Description.SubTitle;
     this.subDescription = Text.Services.SoftwareQuality.Description.Text2;
+    this.videoUrl = Text.Services.SoftwareQuality.Description.VideoUrl || undefined;
     this.titleContact = Text.Services.SoftwareQuality.Contact.Title;
     this.textContact = Text.Services.SoftwareQuality.Contact.Text;
     this.imageContact = Text.Services.SoftwareQuality.Contact.Img;

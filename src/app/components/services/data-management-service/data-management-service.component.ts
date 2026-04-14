@@ -25,7 +25,8 @@ export class DataManagementServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  
+  videoUrl?: string;
+
   ngOnInit(): void {
     this.title = Text.Services.DataManagement.Title.Title;
     this.subTitle = Text.Services.DataManagement.Title.Text;
@@ -35,6 +36,7 @@ export class DataManagementServiceComponent implements OnInit{
     this.image = Text.Services.DataManagement.Description.Img;
     this.subTitleDescription = Text.Services.DataManagement.Description.SubTitle;
     this.subDescription = Text.Services.DataManagement.Description.Text2;
+    this.videoUrl = Text.Services.DataManagement.Description.VideoUrl || undefined;
     this.titleContact = Text.Services.DataManagement.Contact.Title;
     this.textContact = Text.Services.DataManagement.Contact.Text;
     this.imageContact = Text.Services.DataManagement.Contact.Img;
