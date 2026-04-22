@@ -17,7 +17,8 @@
         <div class="text-container">
           <h3> {{subTitleDescription}} </h3>
           <div [innerHTML]="subDescription"></div>
-          @if (videoUrl) {
+          <!-- -----------FIXME: Aca va el boton del video pendiente a validacion------------ -->
+          <!-- @if (videoUrl) {
             <div class="video-btn-container">
               <a [href]="videoUrl" target="_blank" rel="noopener noreferrer" class="custom_button">
                 <span class="button_text">Ver video</span>
@@ -26,8 +27,24 @@
                 </svg>
               </a>
             </div>
-          }
+          } -->
         </div>
+        @if (videoUrl) {
+          <div class="video-container">
+            <div #videoWrapper class="video-wrapper">
+              <iframe
+                #videoIframe
+                width="560" 
+                height="315" 
+                [src]="videoUrl"
+                title="ETL Soluciones Gestión de Operaciones de TI"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        }
       </div>
       @if (features && features.length > 0) {
         <div class="features-grid">

@@ -26,7 +26,7 @@ export class ProcessAutomationServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  videoUrl?: string;
+  videoUrl!: string;
 
   ngOnInit(): void {
     this.title = Text.Services.ProcessAutomation.Title.Title;

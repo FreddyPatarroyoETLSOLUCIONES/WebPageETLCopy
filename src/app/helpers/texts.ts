@@ -182,7 +182,8 @@ export const Text: any = {
                         <p>Combinamos estas capacidades con automatización de monitoreo, gestión de errores conocidos y despliegues continuos, garantizando estabilidad, eficiencia y alto desempeño.</p>
                         </br> 
                         <p>Adoptar IA y automatización no solo mejora la operación actual, sino que prepara a las organizaciones para un entorno tecnológico más ágil, resiliente y competitivo.</p>`,
-                VideoUrl: 'https://www.youtube.com/watch?v=WhyAB4_oF-g'
+                //VideoUrl: 'https://www.youtube.com/watch?v=WhyAB4_oF-g', //FIXME: Esta es la URL para el botón de video, se debe validar con el cliente si se mantiene o se cambia por el iframe.
+                VideoUrl: 'https://www.youtube.com/embed/WhyAB4_oF-g?si=UTWiOvVOoHDCnWv3',
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -218,7 +219,8 @@ export const Text: any = {
                         <p>Estas capacidades se complementan con monitoreo continuo y cumplimiento normativo, asegurando confiabilidad y máximo aprovechamiento estratégico de la información.</p>
                         </br>
                         <p>La adopción de IA y BI en la gestión de datos impulsa decisiones más inteligentes, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`,
-                VideoUrl: 'https://www.youtube.com/watch?v=ueqF4nue81I'
+                //VideoUrl: 'https://www.youtube.com/watch?v=ueqF4nue81I' //FIXME: Esta es la URL para el botón de video, se debe validar con el cliente si se mantiene o se cambia por el iframe.
+                VideoUrl: 'https://www.youtube.com/embed/ueqF4nue81I?si=JLZuVkC2OW-rvYnD', 
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -249,7 +251,8 @@ export const Text: any = {
                         <p>Estas capacidades se integran de manera flexible con diferentes tecnologías —RPA, BPM, APIs o plataformas de orquestación— garantizando continuidad operativa, reducción de tiempos y mayor eficiencia sin depender de un producto específico.</p>
                         </br>
                         <p>La automatización inteligente permite a las organizaciones concentrarse en actividades de alto valor, optimizar recursos y avanzar con solidez en su transformación digital, creando procesos más ágiles, confiables y escalables.</p>`,
-                VideoUrl: 'https://www.youtube.com/watch?v=gv-rbR2PT5s'
+                //VideoUrl: 'https://www.youtube.com/watch?v=gv-rbR2PT5s', //FIXME: Esta es la URL para el botón de video, se debe validar con el cliente si se mantiene o se cambia por el iframe.
+                VideoUrl: 'https://www.youtube.com/embed/gv-rbR2PT5s?si=Rysg0cnEHWEN-11Y', 
             },
             Features: [
                 {
@@ -297,7 +300,8 @@ export const Text: any = {
                         <p>Apoyados en DevOps, integración continua y despliegue automatizado, diseñamos soluciones que se adaptan a distintos entornos y tecnologías, asegurando escalabilidad y evolución constante con el negocio.</p>
                         </br>
                         <p>La combinación de agilidad, experiencia multitecnológica e Inteligencia Artificial acelera la innovación, fortalece la competitividad digital y garantiza resultados medibles y sostenibles.</p>`,
-                VideoUrl: 'https://www.youtube.com/watch?v=_VoaH8RT5vA'
+                //VideoUrl: 'https://www.youtube.com/watch?v=_VoaH8RT5vA',  //FIXME: Esta es la URL para el botón de video, se debe validar con el cliente si se mantiene o se cambia por el iframe.
+                VideoUrl: 'https://www.youtube.com/embed/_VoaH8RT5vA?si=hqrNxq4a3uAYR60Y', 
             },
             Contact: {
                 Title: 'Contáctenos',
@@ -330,7 +334,8 @@ export const Text: any = {
                         <p>Estas capacidades se integran con pruebas funcionales, de seguridad, rendimiento y automatización continua, asegurando entregas confiables, escalables y de alto nivel.</p>
                         </br>
                         <p>La calidad impulsada por IA y mejores prácticas reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida, sostenible y orientada a resultados.</p>`,
-                VideoUrl: 'https://www.youtube.com/watch?v=tGCwLo4kPw0'
+                //VideoUrl: 'https://www.youtube.com/watch?v=tGCwLo4kPw0' //FIXME: Esta es la URL para el botón de video, se debe validar con el cliente si se mantiene o se cambia por el iframe.
+                VideoUrl: 'https://www.youtube.com/embed/tGCwLo4kPw0?si=VHg3gDvJi9re5KyZ', 
             },
             Contact: {
                 Title: 'Contáctenos',

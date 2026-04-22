@@ -107,10 +107,11 @@
     object-fit: contain;
 }
 .card_back{
-    background-color: var(--card_ability_color_hover);
+    background-color: var(--box_container);
     color: var(--text_color);
     transform: rotateY(180deg);
     line-height: 1.6;
+    box-shadow: var(--box-shadow_two_sides);
 }
 
 @media only screen and (max-width: 1200px){
@@ -128,6 +129,7 @@
         width: 100%;
         min-height: unset;
         perspective: none;
+        max-height: unset;
     }
     .flip_card_inner{
         height: auto;

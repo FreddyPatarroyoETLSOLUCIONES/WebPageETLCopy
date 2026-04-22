@@ -25,7 +25,7 @@ export class DataManagementServiceComponent implements OnInit{
   titleContact!:string;
   textContact!:string;
   imageContact!:string;
-  videoUrl?: string;
+  videoUrl!: string;
 
   ngOnInit(): void {
     this.title = Text.Services.DataManagement.Title.Title;

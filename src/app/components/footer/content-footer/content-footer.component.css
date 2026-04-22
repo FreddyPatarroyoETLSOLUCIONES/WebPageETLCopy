@@ -66,10 +66,15 @@
     }
 
     .content_footer .top_section .box_card .box_form {
-        border-radius: var(--box_border_radius_options);
-        box-shadow: var(--box_shadow);
-        margin: auto 50px;
+        margin: 0;
+        padding: 0;
     }
+
+    .content_footer .map_full {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
